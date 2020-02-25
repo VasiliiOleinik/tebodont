@@ -1,4 +1,38 @@
 header.header
-    .box
-        .header__body
-            
+  .box.h-100.ai-center
+    .header__body.d-flex.ai-center.w-100
+      .header__logo
+        a(href="")
+          img(src="img/logo.svg", alt="Logo")
+      nav(class="header__menu")
+        ul(class="header__menu-list d-flex")
+          li(class="menu--item")
+            a(href="/") каталог
+          li(class="menu--item")
+            a(href="/") о нас
+          li(class="menu--item")
+            a(href="/") доставка
+          li(class="menu--item")
+            a(href="/") контакты
+      .header__management.d-flex.ai-center
+        .header--currency
+          span(class="header--currency__active") USD
+          ul(class="header--currency_list")
+            li(class="header--currency_item")
+              a(href="/") USD
+            li(class="header--currency_item")
+              a(href="/") EUR
+            li(class="header--currency_item")
+              a(href="/") UAH
+        .header--lang
+          span(class="header--lang__active") RU
+          ul(class="header--lang_list")
+            li(class="header--lang_item")
+              a(href="/") RU
+            li(class="header--lang_item")
+              a(href="/") UA
+            li(class="header--lang_item")
+              a(href="/") EN
+        a(href="cart.html" class="header--cart")
+          img(src="img/cart.svg", alt="Cart ico")
+          span(class="header--cart_counter d-flex ai-center justify-center") 3

@@ -1,0 +1,77 @@
+.header
+  width: 100%
+  height: 65px
+  border-bottom: 2px solid $gray
+  margin-bottom: 15px
+  &__menu
+    margin-left: 55px
+    & .menu--item
+      margin-right: 20px
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+      color: #5B5B5B
+  &__management
+    margin-left: auto
+    & .header--currency
+      margin-left: 15px
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+      color: #9C9C9C
+      &__active
+        cursor: pointer
+        position: relative
+        &:after
+          content: url('../img/arrow-down-top.svg')
+          position: absolute
+          right: -20px
+          top: 50%
+          transform: translateY(-50%)
+      & .header--currency_list
+        display: none
+    & .header--lang
+      margin-left: 30px
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+      color: #9C9C9C
+      &__active
+        cursor: pointer
+        position: relative
+        &:after
+          content: url('../img/arrow-down-top.svg')
+          position: absolute
+          right: -20px
+          top: 50%
+          transform: translateY(-50%)
+      & .header--lang_list
+        display: none
+    & .header--cart
+      position: relative
+      margin-left: 40px
+      &_counter
+        position: absolute
+        bottom: -5px
+        right: -5px
+        width: 18px
+        height: 18px
+        background: #F8BD64
+        border-radius: 50%
+        font-family: $lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 134.6%
+        text-align: center
+        text-transform: lowercase
+        color: #5B5B5B

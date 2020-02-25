@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/img/favicon.ico" rel="shortcut icon">
+    <link type="text/css" href="css/libs.min.css" rel="stylesheet">
+    <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/lato.css">
+    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <title>Tebodont</title>
+  </head>
+  <body>
+    <div class="content-wrapper" id="contentWrapper">
+      <div class="page-wrapper" id="pageWrapper">
+        <header class="header">
+          <div class="box h-100 ai-center">
+            <div class="header__body d-flex ai-center w-100">
+              <div class="header__logo"><a href=""><img src="img/logo.svg" alt="Logo"></a></div>
+              <nav class="header__menu">
+                <ul class="header__menu-list d-flex">
+                  <li class="menu--item"><a href="/">каталог</a></li>
+                  <li class="menu--item"><a href="/">о нас</a></li>
+                  <li class="menu--item"><a href="/">доставка</a></li>
+                  <li class="menu--item"><a href="/">контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header__management d-flex ai-center">
+                <div class="header--currency"><span class="header--currency__active">USD</span>
+                  <ul class="header--currency_list">
+                    <li class="header--currency_item"><a href="/">USD</a></li>
+                    <li class="header--currency_item"><a href="/">EUR</a></li>
+                    <li class="header--currency_item"><a href="/">UAH</a></li>
+                  </ul>
+                </div>
+                <div class="header--lang"><span class="header--lang__active">RU</span>
+                  <ul class="header--lang_list">
+                    <li class="header--lang_item"><a href="/">RU</a></li>
+                    <li class="header--lang_item"><a href="/">UA</a></li>
+                    <li class="header--lang_item"><a href="/">EN</a></li>
+                  </ul>
+                </div><a class="header--cart" href="cart.html"><img src="img/cart.svg" alt="Cart ico"><span class="header--cart_counter d-flex ai-center justify-center">3</span></a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="box col">
+            <ul class="breadcrumbs d-flex w-100">
+              <li class="breadcrumbs--elem"><a class="breadcrumb--link" href="/">Главная</a></li>
+              <li class="breadcrumbs--elem separator">/</li>
+              <li class="breadcrumbs--elem"><a class="breadcrumb--link" href="/">Доставка</a></li>
+            </ul>
+            <h2 class="pagetitle">способы доставки</h2>
+            <div class="delivery--content d-flex flex-wrap">
+              <div class="delivery--item d-flex col-50">
+                <div class="delivery--item__img d-flex ai-center justify-center"><img src="img/np.svg" alt="Новая почта"></div>
+                <div class="delivery--item__info d-flex col"><span class="delivery--name">Новая почта</span><span class="delivery--text">Доставка оплачивается дополнительно по тарифам почты, при оформлении необходимо указать адрес почтового отделения и адрес доставки.</span></div>
+              </div>
+              <div class="delivery--item d-flex col-50">
+                <div class="delivery--item__img d-flex ai-center justify-center"><img src="img/sam.svg" alt="Самовывоз"></div>
+                <div class="delivery--item__info d-flex col"><span class="delivery--name">Самовывоз</span><span class="delivery--text">Из офиса по адресу: Бутышев переулок 14, офис 2, Киев, Украина, 01010</span></div>
+              </div>
+              <div class="delivery--item d-flex col-50">
+                <div class="delivery--item__img d-flex ai-center justify-center"><img src="img/courier.svg" alt="Курьером до двери"></div>
+                <div class="delivery--item__info d-flex col"><span class="delivery--name">Курьером до двери</span><span class="delivery--text">Доставка осуществляется курьером Новой почты, оплачивается дополнительно по тарифам почты</span></div>
+              </div>
+              <div class="delivery--item d-flex col-50">
+                <div class="delivery--item__img d-flex ai-center justify-center"><img src="img/gift.svg" alt="Бесплатно"></div>
+                <div class="delivery--item__info d-flex col"><span class="delivery--name">Бесплатно</span><span class="delivery--text">При покупке на 1000грн доставка Новой почтой за наш счет!</span></div>
+              </div>
+            </div>
+            <div class="footer--form d-flex w-100 ai-center"><span class="footer--form__text">УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!</span>
+              <form class="d-flex ai-center" action="">
+                <input class="footer--form__input" type="text" name="email" placeholder="E-mail">
+                <button class="footer--form__btn" type="submit">подписаться</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer-wrapper" id="footerWrapper">
+        <footer class="footer">
+          <div class="box">
+            <div class="footer__body"></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

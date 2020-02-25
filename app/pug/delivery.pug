@@ -1,0 +1,41 @@
+extends blocks/_layout
+append content
+  main.main
+    .box.col
+      ul.breadcrumbs.d-flex.w-100
+        li(class="breadcrumbs--elem")
+          a(href="/" class="breadcrumb--link") Главная
+        li(class="breadcrumbs--elem separator") /
+        li(class="breadcrumbs--elem")
+          a(href="/" class="breadcrumb--link") Доставка
+      h2(class="pagetitle") способы доставки
+      .delivery--content.d-flex.flex-wrap
+        .delivery--item.d-flex.col-50
+          .delivery--item__img.d-flex.ai-center.justify-center
+            img(src="img/np.svg", alt="Новая почта")
+          .delivery--item__info.d-flex.col
+            span(class="delivery--name") Новая почта
+            span(class="delivery--text") Доставка оплачивается дополнительно по тарифам почты, при оформлении необходимо указать адрес почтового отделения и адрес доставки.
+        .delivery--item.d-flex.col-50
+          .delivery--item__img.d-flex.ai-center.justify-center
+            img(src="img/sam.svg", alt="Самовывоз")
+          .delivery--item__info.d-flex.col
+            span(class="delivery--name") Самовывоз
+            span(class="delivery--text") Из офиса по адресу: Бутышев переулок 14, офис 2, Киев, Украина, 01010
+        .delivery--item.d-flex.col-50
+          .delivery--item__img.d-flex.ai-center.justify-center
+            img(src="img/courier.svg", alt="Курьером до двери")
+          .delivery--item__info.d-flex.col
+            span(class="delivery--name") Курьером до двери
+            span(class="delivery--text") Доставка осуществляется курьером Новой почты, оплачивается дополнительно по тарифам почты
+        .delivery--item.d-flex.col-50
+          .delivery--item__img.d-flex.ai-center.justify-center
+            img(src="img/gift.svg", alt="Бесплатно")
+          .delivery--item__info.d-flex.col
+            span(class="delivery--name") Бесплатно
+            span(class="delivery--text") При покупке на 1000грн доставка Новой почтой за наш счет!
+      .footer--form.d-flex.w-100.ai-center
+        span(class="footer--form__text") УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!
+        form(action="" class="d-flex ai-center")
+          input(type="text" name="email" placeholder="E-mail" class="footer--form__input")
+          button(type="submit" class="footer--form__btn") подписаться
