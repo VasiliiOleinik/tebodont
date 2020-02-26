@@ -1,0 +1,38 @@
+extends blocks/_layout
+append content
+  main.main
+    .box.flex-wrap
+      ul.breadcrumbs.d-flex.w-100
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") Главная
+        li(class="breadcrumbs--elem separator") /
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") контакты
+      h2(class="pagetitle") контакты
+      .contacts--section.d-flex.col.col-50
+        .contacts--item.d-flex.ai-start
+          img(src="img/location.svg", alt="Location")
+          span Бутышев переулок 14, офис 2, Киев, Украина, 01010
+        .contacts--item.d-flex.ai-start
+          img(src="img/mail.svg", alt="Email")
+          a(href="mailto:info@swisstrade.com.ua") info@swisstrade.com.ua
+        .contacts--item.d-flex.ai-start
+          img(src="img/phone.svg", alt="Phone")
+          .contacts--list.d-flex.col.ai-start
+            span(class="contacts--list_name") Звонки бесплатны на территории Украины
+            a(href="tel:0800500362") 0 800 500 362 
+              span многоканальный
+            a(href="380445006800") +380 44 500 68 00 
+              span многоканальный тел./факс
+            a(href="tel:380503804942") +380 50 380 49 42 
+              span (МТС)
+            a(href="tel:380684926800") +380 68 492 68 00 
+              span (Киевстар)
+      .contacts--section.d-flex.col.col-50
+        .map
+          iframe(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1510.9353578028222!2d30.546727954596555!3d50.43960582677116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa614158129%3A0x3af5eff28e7e51e1!2z0JHRg9GC0LjRiNGW0LIg0L_RgNC-0LLRg9C70L7QuiwgMTQsIDIsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1582730631027!5m2!1sru!2sua" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="")
+      .footer--form.d-flex.w-100.ai-center
+        span(class="footer--form__text") УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!
+        form(class="d-flex ai-center" action="")
+          input(class="footer--form__input" name="email" type="text" placeholder="E-mail")
+          button(class="footer--form__btn" type="submit") подписаться

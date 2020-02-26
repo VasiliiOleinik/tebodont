@@ -76,10 +76,45 @@
       text-transform: uppercase
       color: #000000
       margin-bottom: 10px
-    & .footer--currency_list
-      display: none
-    & .footer--lang_list
-      display: none
+    & .footer--currency
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+      color: #242424
+      margin-right: 30px
+      &__active
+        cursor: pointer
+        position: relative
+        &:after
+          content: url('../img/arrow-down.svg')
+          position: absolute
+          right: -20px
+          top: 50%
+          transform: translateY(-50%)
+      &_list
+        display: none
+    & .footer--lang
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      text-transform: uppercase
+      color: #242424
+      &__active
+        cursor: pointer
+        position: relative
+        &:after
+          content: url('../img/arrow-down.svg')
+          position: absolute
+          right: -20px
+          top: 50%
+          transform: translateY(-50%)
+      &_list
+        display: none
     & .footer__menu
       margin-bottom: 20px
       & .menu--item
@@ -91,12 +126,20 @@
         text-transform: uppercase
         color: #242424
         margin: 0px 10px
+    & .footer--copyright
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 16px
+      line-height: 19px
+      text-transform: capitalize
+      color: #242424
   &__right
     width: 25%
     &--mail
       margin-bottom: 20px
       width: 100%
-      margin-bottom: 5px
+      margin-bottom: 30px
       font-family: $lato
       font-style: normal
       font-weight: 300
