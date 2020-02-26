@@ -1,3 +1,52 @@
 footer.footer
-    .box
-        .footer__body
+  .box
+    .footer__body.d-flex.w-100
+      .footer__contacts.d-flex.ai-start
+        img(src="img/phone.svg", alt="Phone")
+        .footer__contacts--info.d-flex.col
+          span(class="footer--text") Звонки бесплатны на территории Украины
+          span(class="footer--text") 0 800 500 362 многоканальный
+          span(class="footer--text") +380 44 500 68 00 многоканальный тел./факс
+          span(class="footer--text") +380 50 380 49 42 (МТС)
+          span(class="footer--text") +380 68 492 68 00 (Киевстар)
+      .footer__central.d-flex.col.ai-center.justify-center.p-RL20
+        a(href="/" class="footer--logo")
+          img(src="img/logo.svg", alt="Logo")
+        span(class="footer--name") ООО СВИСС-ТРЕЙД
+        nav(class="footer__menu d-flex ai-center")
+          ul(class="footer__menu-list d-flex")
+            li(class="menu--item")
+              a(href="/") каталог
+            li(class="menu--item")
+              a(href="/") о нас
+            li(class="menu--item")
+              a(href="/") доставка
+            li(class="menu--item")
+              a(href="/") контакты
+          .footer--currency
+            span(class="footer--currency__active") USD
+            ul(class="footer--currency_list")
+              li(class="footer--currency_item")
+                a(href="/") USD
+              li(class="footer--currency_item")
+                a(href="/") EUR
+              li(class="footer--currency_item")
+                a(href="/") UAH
+          .footer--lang
+            span(class="footer--lang__active") RU
+            ul(class="footer--lang_list")
+              li(class="footer--lang_item")
+                a(href="/") RU
+              li(class="footer--lang_item")
+                a(href="/") UA
+              li(class="footer--lang_item")
+                a(href="/") EN
+        span(class="footer--copyright") Copyright © 2020 Дизайн: FoxDesign
+      .footer__right.d-flex.col
+        .footer__right--mail.d-flex.ai-start
+          img(src="img/mail.svg", alt="Mail")
+          span(class="footer--text") info@swisstrade.com.ua
+        .footer__right--location.d-flex.ai-start
+          img(src="img/location.svg", alt="location")
+          span(class="footer--text") Бутышев переулок 14, офис 2, Киев, Украина, 01010
+
