@@ -1,0 +1,99 @@
+extends blocks/_layout
+append content
+  main.main
+    .box.flex-wrap
+      ul.breadcrumbs.d-flex.w-100
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") Главная
+        li(class="breadcrumbs--elem separator") /
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") Корзина
+      .cart--content.d-flex.col.w-100
+        form(action="" class="d-flex col w-100")
+          .cart--header.d-flex.ai-center
+            .cart--header__name наименование товара
+            .cart--header__price цена за шт
+            .cart--header__counter колл-во/шт
+            .cart--header__summ общая сумма
+          .cart--body.d-flex.col.w-100
+            .cart--item.d-flex
+              label.cart--item__checbox
+                input(type="checbox" name="cartCheck" class="cart--checkbox")
+                span(class="checbox--custom")
+              .cart--item__img
+                img(src="img/product.png", alt="")
+              .cart--item__name
+                span(class="item--name") Зубная паста tebodont 
+                span(class="item--text") с маслом чайного дерева и фторидом, 75 мл
+              .cart--item__price
+                p 
+                  span(class="price--value") 15
+                  span(class="price--currency") $
+              .cart--item__counter
+                button(type="button" class="item--btn minus") -
+                input(type="text" value="1" class="item--input")
+                button(type="button" class="item--btn plus") +
+              .cart--item__total
+                span(class="price--value") 15
+                span(class="price--currency") $
+              button(class="item--remove") x
+            .cart--item.d-flex
+              label.cart--item__checbox
+                input(type="checbox" name="cartCheck" class="cart--checkbox")
+                span(class="checbox--custom")
+              .cart--item__img
+                img(src="img/produc2.png", alt="")
+              .cart--item__name
+                span(class="item--name") Ополаскиватель для полости рта  tebodont
+                span(class="item--text") без фторида, 400 мл
+              .cart--item__price
+                p 
+                  span(class="price--value") 15
+                  span(class="price--currency") $
+              .cart--item__counter
+                button(type="button" class="item--btn minus") -
+                input(type="text" value="1" class="item--input")
+                button(type="button" class="item--btn plus") +
+              .cart--item__total
+                span(class="price--value") 15
+                span(class="price--currency") $
+              button(class="item--remove") x
+            .cart--item.d-flex
+              label.cart--item__checbox
+                input(type="checbox" name="cartCheck" class="cart--checkbox")
+                span(class="checbox--custom")
+              .cart--item__img
+                img(src="img/product3.png", alt="")
+              .cart--item__name
+                span(class="item--name") спрей  tebodont 
+                span(class="item--text") с маслом чайного дерева без фторида, 25 мл
+              .cart--item__price
+                p 
+                  span(class="price--value") 15
+                  span(class="price--currency") $
+              .cart--item__counter
+                button(type="button" class="item--btn minus") -
+                input(type="text" value="1" class="item--input")
+                button(type="button" class="item--btn plus") +
+              .cart--item__total
+                span(class="price--value") 15
+                span(class="price--currency") $
+              button(class="item--remove") x
+          .cart--footer.d-flex.space-between
+            p(class="cart--footer__counter") Выбрано товаров:
+              span(class="cart--footer__count") 3
+            .cart--footer__info.d-flex.col
+              .cart--footer__sale.d-flex
+                span(class="cart--footer__text") скидка: 
+                span(class="cart--footer__summ") 4
+                span(class="cart--footer__currency") $
+              .cart--footer__sale.d-flex
+                span(class="cart--footer__text") К оплате: 
+                span(class="cart--footer__summ") 56
+                span(class="cart--footer__currency") $
+
+      .footer--form.d-flex.w-100.ai-center
+        span(class="footer--form__text") УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!
+        form(class="d-flex ai-center" action="")
+          input(class="footer--form__input" name="email" type="text" placeholder="E-mail")
+          button(class="footer--form__btn" type="submit") подписаться

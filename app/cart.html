@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/img/favicon.ico" rel="shortcut icon">
+    <link type="text/css" href="css/libs.min.css" rel="stylesheet">
+    <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/lato.css">
+    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <title>Tebodont</title>
+  </head>
+  <body>
+    <div class="content-wrapper" id="contentWrapper">
+      <div class="page-wrapper" id="pageWrapper">
+        <header class="header">
+          <div class="box h-100 ai-center">
+            <div class="header__body d-flex ai-center w-100">
+              <div class="header__logo"><a href=""><img src="img/logo.svg" alt="Logo"></a></div>
+              <nav class="header__menu">
+                <ul class="header__menu-list d-flex">
+                  <li class="menu--item"><a href="/">каталог</a></li>
+                  <li class="menu--item"><a href="/">о нас</a></li>
+                  <li class="menu--item"><a href="/">доставка</a></li>
+                  <li class="menu--item"><a href="/">контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header__management d-flex ai-center">
+                <div class="header--currency"><span class="header--currency__active">USD</span>
+                  <ul class="header--currency_list">
+                    <li class="header--currency_item"><a href="/">USD</a></li>
+                    <li class="header--currency_item"><a href="/">EUR</a></li>
+                    <li class="header--currency_item"><a href="/">UAH</a></li>
+                  </ul>
+                </div>
+                <div class="header--lang"><span class="header--lang__active">RU</span>
+                  <ul class="header--lang_list">
+                    <li class="header--lang_item"><a href="/">RU</a></li>
+                    <li class="header--lang_item"><a href="/">UA</a></li>
+                    <li class="header--lang_item"><a href="/">EN</a></li>
+                  </ul>
+                </div><a class="header--cart" href="cart.html"><img src="img/cart.svg" alt="Cart ico"><span class="header--cart_counter d-flex ai-center justify-center">3</span></a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="box flex-wrap">
+            <ul class="breadcrumbs d-flex w-100">
+              <li class="breadcrumbs--elem"><a class="breadcrumb--link" href="/">Главная</a></li>
+              <li class="breadcrumbs--elem separator">/</li>
+              <li class="breadcrumbs--elem"><a class="breadcrumb--link" href="/">Корзина</a></li>
+            </ul>
+            <div class="cart--content d-flex col w-100">
+              <form class="d-flex col w-100" action="">
+                <div class="cart--header d-flex ai-center">
+                  <div class="cart--header__name">наименование товара</div>
+                  <div class="cart--header__price">цена за шт</div>
+                  <div class="cart--header__counter">колл-во/шт</div>
+                  <div class="cart--header__summ">общая сумма</div>
+                </div>
+                <div class="cart--body d-flex col w-100">
+                  <div class="cart--item d-flex">
+                    <label class="cart--item__checbox">
+                      <input class="cart--checkbox" type="checbox" name="cartCheck"><span class="checbox--custom"></span>
+                    </label>
+                    <div class="cart--item__img"><img src="img/product.png" alt=""></div>
+                    <div class="cart--item__name"><span class="item--name">Зубная паста tebodont </span><span class="item--text">с маслом чайного дерева и фторидом, 75 мл</span></div>
+                    <div class="cart--item__price">
+                      <p> <span class="price--value">15</span><span class="price--currency">$</span></p>
+                    </div>
+                    <div class="cart--item__counter">
+                      <button class="item--btn minus" type="button">-</button>
+                      <input class="item--input" type="text" value="1">
+                      <button class="item--btn plus" type="button">+</button>
+                    </div>
+                    <div class="cart--item__total"><span class="price--value">15</span><span class="price--currency">$</span></div>
+                    <button class="item--remove">x</button>
+                  </div>
+                  <div class="cart--item d-flex">
+                    <label class="cart--item__checbox">
+                      <input class="cart--checkbox" type="checbox" name="cartCheck"><span class="checbox--custom"></span>
+                    </label>
+                    <div class="cart--item__img"><img src="img/produc2.png" alt=""></div>
+                    <div class="cart--item__name"><span class="item--name">Ополаскиватель для полости рта  tebodont</span><span class="item--text">без фторида, 400 мл</span></div>
+                    <div class="cart--item__price">
+                      <p> <span class="price--value">15</span><span class="price--currency">$</span></p>
+                    </div>
+                    <div class="cart--item__counter">
+                      <button class="item--btn minus" type="button">-</button>
+                      <input class="item--input" type="text" value="1">
+                      <button class="item--btn plus" type="button">+</button>
+                    </div>
+                    <div class="cart--item__total"><span class="price--value">15</span><span class="price--currency">$</span></div>
+                    <button class="item--remove">x</button>
+                  </div>
+                  <div class="cart--item d-flex">
+                    <label class="cart--item__checbox">
+                      <input class="cart--checkbox" type="checbox" name="cartCheck"><span class="checbox--custom"></span>
+                    </label>
+                    <div class="cart--item__img"><img src="img/product3.png" alt=""></div>
+                    <div class="cart--item__name"><span class="item--name">спрей  tebodont </span><span class="item--text">с маслом чайного дерева без фторида, 25 мл</span></div>
+                    <div class="cart--item__price">
+                      <p> <span class="price--value">15</span><span class="price--currency">$</span></p>
+                    </div>
+                    <div class="cart--item__counter">
+                      <button class="item--btn minus" type="button">-</button>
+                      <input class="item--input" type="text" value="1">
+                      <button class="item--btn plus" type="button">+</button>
+                    </div>
+                    <div class="cart--item__total"><span class="price--value">15</span><span class="price--currency">$</span></div>
+                    <button class="item--remove">x</button>
+                  </div>
+                </div>
+                <div class="cart--footer d-flex space-between">
+                  <p class="cart--footer__counter">Выбрано товаров:<span class="cart--footer__count">3</span></p>
+                  <div class="cart--footer__info d-flex col">
+                    <div class="cart--footer__sale d-flex"><span class="cart--footer__text">скидка: </span><span class="cart--footer__summ">4</span><span class="cart--footer__currency">$</span></div>
+                    <div class="cart--footer__sale d-flex"><span class="cart--footer__text">К оплате: </span><span class="cart--footer__summ">56</span><span class="cart--footer__currency">$</span></div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class="footer--form d-flex w-100 ai-center"><span class="footer--form__text">УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!</span>
+              <form class="d-flex ai-center" action="">
+                <input class="footer--form__input" name="email" type="text" placeholder="E-mail">
+                <button class="footer--form__btn" type="submit">подписаться</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer-wrapper" id="footerWrapper">
+        <footer class="footer">
+          <div class="box">
+            <div class="footer__body d-flex w-100">
+              <div class="footer__contacts d-flex ai-start"><img src="img/phone.svg" alt="Phone">
+                <div class="footer__contacts--info d-flex col"><span class="footer--text">Звонки бесплатны на территории Украины</span><span class="footer--text">0 800 500 362 многоканальный</span><span class="footer--text">+380 44 500 68 00 многоканальный тел./факс</span><span class="footer--text">+380 50 380 49 42 (МТС)</span><span class="footer--text">+380 68 492 68 00 (Киевстар)</span></div>
+              </div>
+              <div class="footer__central d-flex col ai-center justify-center p-RL20"><a class="footer--logo" href="/"><img src="img/logo.svg" alt="Logo"></a><span class="footer--name">ООО СВИСС-ТРЕЙД</span>
+                <nav class="footer__menu d-flex ai-center">
+                  <ul class="footer__menu-list d-flex">
+                    <li class="menu--item"><a href="/">каталог</a></li>
+                    <li class="menu--item"><a href="/">о нас</a></li>
+                    <li class="menu--item"><a href="/">доставка</a></li>
+                    <li class="menu--item"><a href="/">контакты</a></li>
+                  </ul>
+                  <div class="footer--currency"><span class="footer--currency__active">USD</span>
+                    <ul class="footer--currency_list">
+                      <li class="footer--currency_item"><a href="/">USD</a></li>
+                      <li class="footer--currency_item"><a href="/">EUR</a></li>
+                      <li class="footer--currency_item"><a href="/">UAH</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer--lang"><span class="footer--lang__active">RU</span>
+                    <ul class="footer--lang_list">
+                      <li class="footer--lang_item"><a href="/">RU</a></li>
+                      <li class="footer--lang_item"><a href="/">UA</a></li>
+                      <li class="footer--lang_item"><a href="/">EN</a></li>
+                    </ul>
+                  </div>
+                </nav><span class="footer--copyright">Copyright © 2020 Дизайн: FoxDesign</span>
+              </div>
+              <div class="footer__right d-flex col">
+                <div class="footer__right--mail d-flex ai-start"><img src="img/mail.svg" alt="Mail"><span class="footer--text">info@swisstrade.com.ua</span></div>
+                <div class="footer__right--location d-flex ai-start"><img src="img/location.svg" alt="location"><span class="footer--text">Бутышев переулок 14, офис 2, Киев, Украина, 01010</span></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
