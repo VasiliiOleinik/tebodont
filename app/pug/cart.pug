@@ -18,7 +18,7 @@ append content
           .cart--body.d-flex.col.w-100
             .cart--item.d-flex
               label.cart--item__checbox.custom-checkbox--container
-                input(type="checkbox" name="cartCheck" class="input--checkbox")
+                input(type="checkbox" name="cartCheck" class="input--checkbox" checked)
                 span(class="checbox--custom")
               .cart--item__img.d-flex.ai-center
                 img(src="img/product.png", alt="")
@@ -42,7 +42,7 @@ append content
                 img(src="img/remove.png", alt="")
             .cart--item.d-flex
               label.cart--item__checbox.custom-checkbox--container
-                input(type="checkbox" name="cartCheck" class="input--checkbox")
+                input(type="checkbox" name="cartCheck" class="input--checkbox" checked)
                 span(class="checbox--custom")
               .cart--item__img.d-flex.ai-center
                 img(src="img/produc2.png", alt="")
@@ -92,16 +92,19 @@ append content
             p(class="cart--footer__counter") Выбрано товаров:
               span(class="cart--footer__count") 3
             .cart--footer__info.d-flex.col
-              .cart--footer__sale.d-flex
-                span(class="cart--footer__text") скидка: 
+              .cart--footer__sale.d-flex.ai-center
+                span(class="cart--footer__text") Скидка: 
                 span(class="cart--footer__summ") 4
                 span(class="cart--footer__currency") $
-              .cart--footer__sale.d-flex
+              .cart--footer__pay.d-flex.ai-center
                 span(class="cart--footer__text") К оплате: 
                 span(class="cart--footer__summ") 56
                 span(class="cart--footer__currency") $
+          .cart--footer__btns.d-flex.ai-center.space-between
+            a(href="/" class="link--btn") вернуться к покупкам
+            a(href="cart-final.html" class="link--btn active") оформить
 
-      .footer--form.d-flex.w-100.ai-center
+      .footer--form.d-flex.w-100.ai-center.justify-center
         span(class="footer--form__text") УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!
         form(class="d-flex ai-center" action="")
           input(class="footer--form__input" name="email" type="text" placeholder="E-mail")

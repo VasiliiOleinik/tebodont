@@ -25,6 +25,7 @@
       line-height: 19px
       text-transform: uppercase
       color: #9C9C9C
+      position: relative
       &__active
         cursor: pointer
         position: relative
@@ -36,6 +37,17 @@
           transform: translateY(-50%)
       & .header--currency_list
         display: none
+        position: absolute
+        left: 0
+        top: calc(100% + 10px)
+        background: #FFFFFF
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        padding: 9px 8px
+        z-index: 999999
+        & li:not(:last-of-type)
+          margin-bottom: 8px
+        & li:hover
+          color: #000000
     & .header--lang
       margin-left: 30px
       font-family: $lato
@@ -45,6 +57,7 @@
       line-height: 19px
       text-transform: uppercase
       color: #9C9C9C
+      position: relative
       &__active
         cursor: pointer
         position: relative
@@ -56,6 +69,17 @@
           transform: translateY(-50%)
       & .header--lang_list
         display: none
+        position: absolute
+        left: 0
+        top: calc(100% + 10px)
+        background: #FFFFFF
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        padding: 9px 8px
+        z-index: 999999
+        & li:not(:last-of-type)
+          margin-bottom: 8px
+        & li:hover
+          color: #000000
     & .header--cart
       position: relative
       margin-left: 40px

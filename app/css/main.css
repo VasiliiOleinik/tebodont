@@ -285,6 +285,32 @@ select, input, textarea {
   .custom-checkbox--container .input--checkbox:checked ~ .checbox--custom:after {
     display: block; }
 
+.link--btn {
+  text-transform: uppercase;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 168.2%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 13px 39px;
+  border: 1px solid #242424;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear; }
+  .link--btn:hover, .link--btn.active {
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    background: #000000;
+    color: #ffffff; }
+
 .footer--form {
   margin-bottom: 100px; }
   .footer--form__text {
@@ -307,7 +333,13 @@ select, input, textarea {
             box-sizing: border-box;
     -webkit-box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.07);
             box-shadow: inset 0px -1px 5px rgba(0, 0, 0, 0.07);
-    padding: 5px; }
+    padding: 5px;
+    position: relative; }
+    .footer--form form:after {
+      content: url("../img/form-leaf.png");
+      position: absolute;
+      right: -10%;
+      top: -60%; }
     .footer--form form .footer--form__input {
       width: -webkit-calc(100% - 200px);
       width: calc(100% - 200px);
@@ -489,7 +521,8 @@ select, input, textarea {
       font-size: 16px;
       line-height: 19px;
       text-transform: uppercase;
-      color: #9C9C9C; }
+      color: #9C9C9C;
+      position: relative; }
       .header__management .header--currency__active {
         cursor: pointer;
         position: relative; }
@@ -502,7 +535,20 @@ select, input, textarea {
               -ms-transform: translateY(-50%);
                   transform: translateY(-50%); }
       .header__management .header--currency .header--currency_list {
-        display: none; }
+        display: none;
+        position: absolute;
+        left: 0;
+        top: -webkit-calc(100% + 10px);
+        top: calc(100% + 10px);
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 9px 8px;
+        z-index: 999999; }
+        .header__management .header--currency .header--currency_list li:not(:last-of-type) {
+          margin-bottom: 8px; }
+        .header__management .header--currency .header--currency_list li:hover {
+          color: #000000; }
     .header__management .header--lang {
       margin-left: 30px;
       font-family: "Lato", sans-serif;
@@ -511,7 +557,8 @@ select, input, textarea {
       font-size: 16px;
       line-height: 19px;
       text-transform: uppercase;
-      color: #9C9C9C; }
+      color: #9C9C9C;
+      position: relative; }
       .header__management .header--lang__active {
         cursor: pointer;
         position: relative; }
@@ -524,7 +571,20 @@ select, input, textarea {
               -ms-transform: translateY(-50%);
                   transform: translateY(-50%); }
       .header__management .header--lang .header--lang_list {
-        display: none; }
+        display: none;
+        position: absolute;
+        left: 0;
+        top: -webkit-calc(100% + 10px);
+        top: calc(100% + 10px);
+        background: #FFFFFF;
+        -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        padding: 9px 8px;
+        z-index: 999999; }
+        .header__management .header--lang .header--lang_list li:not(:last-of-type) {
+          margin-bottom: 8px; }
+        .header__management .header--lang .header--lang_list li:hover {
+          color: #000000; }
     .header__management .header--cart {
       position: relative;
       margin-left: 40px; }
@@ -593,7 +653,6 @@ select, input, textarea {
         font-weight: normal;
         font-size: 18px;
         line-height: 134.6%;
-        text-transform: capitalize;
         color: #000000;
         margin-bottom: 5px; }
       .cart--content .cart--body .cart--item__name .item--text {
@@ -602,7 +661,6 @@ select, input, textarea {
         font-weight: normal;
         font-size: 16px;
         line-height: 134.6%;
-        text-transform: lowercase;
         color: #9C9C9C; }
     .cart--content .cart--body .cart--item__price {
       width: 10%;
@@ -613,7 +671,6 @@ select, input, textarea {
       font-size: 20px;
       line-height: 134.6%;
       text-align: center;
-      text-transform: lowercase;
       color: #000000; }
     .cart--content .cart--body .cart--item__counter {
       width: 10%;
@@ -647,12 +704,69 @@ select, input, textarea {
       font-weight: normal;
       font-size: 20px;
       line-height: 134.6%;
-      text-align: center;
-      text-transform: lowercase;
       color: #000000; }
     .cart--content .cart--body .cart--item .item--remove {
       width: 10%;
       padding: 0px 5px; }
+
+.cart--content .cart--footer {
+  margin-bottom: 100px; }
+  .cart--content .cart--footer__counter {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 168.2%;
+    letter-spacing: 0.03em;
+    color: #000000; }
+    .cart--content .cart--footer__counter .cart--footer__count {
+      margin-left: 15px;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 168.2%;
+      letter-spacing: 0.03em;
+      color: #000000; }
+  .cart--content .cart--footer .cart--footer__info {
+    padding-right: 10%; }
+  .cart--content .cart--footer .cart--footer__sale {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 168.2%;
+    letter-spacing: 0.03em;
+    color: #9C9C9C; }
+    .cart--content .cart--footer .cart--footer__sale .cart--footer__text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 168.2%;
+      letter-spacing: 0.03em;
+      color: #9C9C9C;
+      margin-right: 15px; }
+  .cart--content .cart--footer .cart--footer__pay {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 168.2%;
+    letter-spacing: 0.03em;
+    color: #000000; }
+    .cart--content .cart--footer .cart--footer__pay .cart--footer__text {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 168.2%;
+      letter-spacing: 0.03em;
+      color: #000000;
+      margin-right: 15px; }
+
+.cart--content .cart--footer__btns {
+  margin-bottom: 70px; }
 
 .contacts--section {
   margin-bottom: 50px; }
