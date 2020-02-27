@@ -17,68 +17,77 @@ append content
             .cart--header__summ общая сумма
           .cart--body.d-flex.col.w-100
             .cart--item.d-flex
-              label.cart--item__checbox
-                input(type="checbox" name="cartCheck" class="cart--checkbox")
+              label.cart--item__checbox.custom-checkbox--container
+                input(type="checkbox" name="cartCheck" class="input--checkbox")
                 span(class="checbox--custom")
-              .cart--item__img
+              .cart--item__img.d-flex.ai-center
                 img(src="img/product.png", alt="")
-              .cart--item__name
-                span(class="item--name") Зубная паста tebodont 
-                span(class="item--text") с маслом чайного дерева и фторидом, 75 мл
-              .cart--item__price
-                p 
+              .cart--item__name.d-flex.justify-center.col
+                span(class="item--name d-flex w-100") Зубная паста tebodont 
+                span(class="item--text d-flex w-100") с маслом чайного дерева и фторидом, 75 мл
+              .cart--item__price.d-flex.ai-center
+                p
                   span(class="price--value") 15
                   span(class="price--currency") $
-              .cart--item__counter
-                button(type="button" class="item--btn minus") -
+              .cart--item__counter.d-flex.ai-center.justify-center
+                button(type="button" class="item--btn minus")
+                  img(src="img/minus.png", alt="Minus")
                 input(type="text" value="1" class="item--input")
-                button(type="button" class="item--btn plus") +
-              .cart--item__total
+                button(type="button" class="item--btn plus")
+                  img(src="img/plus.png", alt="Plus")
+              .cart--item__total.d-flex.ai-center.justify-center
                 span(class="price--value") 15
                 span(class="price--currency") $
-              button(class="item--remove") x
+              button(class="item--remove")
+                img(src="img/remove.png", alt="")
             .cart--item.d-flex
-              label.cart--item__checbox
-                input(type="checbox" name="cartCheck" class="cart--checkbox")
+              label.cart--item__checbox.custom-checkbox--container
+                input(type="checkbox" name="cartCheck" class="input--checkbox")
                 span(class="checbox--custom")
-              .cart--item__img
+              .cart--item__img.d-flex.ai-center
                 img(src="img/produc2.png", alt="")
-              .cart--item__name
-                span(class="item--name") Ополаскиватель для полости рта  tebodont
-                span(class="item--text") без фторида, 400 мл
-              .cart--item__price
-                p 
-                  span(class="price--value") 15
+              .cart--item__name.d-flex.justify-center.col
+                span(class="item--name d-flex w-100") Ополаскиватель для полости рта  tebodont 
+                span(class="item--text d-flex w-100") без фторида, 400 мл
+              .cart--item__price.d-flex.ai-center
+                p
+                  span(class="price--value") 20
                   span(class="price--currency") $
-              .cart--item__counter
-                button(type="button" class="item--btn minus") -
+              .cart--item__counter.d-flex.ai-center.justify-center
+                button(type="button" class="item--btn minus")
+                  img(src="img/minus.png", alt="Minus")
                 input(type="text" value="1" class="item--input")
-                button(type="button" class="item--btn plus") +
-              .cart--item__total
-                span(class="price--value") 15
+                button(type="button" class="item--btn plus")
+                  img(src="img/plus.png", alt="Plus")
+              .cart--item__total.d-flex.ai-center.justify-center
+                span(class="price--value") 20
                 span(class="price--currency") $
-              button(class="item--remove") x
+              button(class="item--remove")
+                img(src="img/remove.png", alt="")
             .cart--item.d-flex
-              label.cart--item__checbox
-                input(type="checbox" name="cartCheck" class="cart--checkbox")
+              label.cart--item__checbox.custom-checkbox--container
+                input(type="checkbox" name="cartCheck" class="input--checkbox")
                 span(class="checbox--custom")
-              .cart--item__img
-                img(src="img/product3.png", alt="")
-              .cart--item__name
-                span(class="item--name") спрей  tebodont 
-                span(class="item--text") с маслом чайного дерева без фторида, 25 мл
-              .cart--item__price
-                p 
-                  span(class="price--value") 15
+              .cart--item__img.d-flex.ai-center
+                img(src="img/product.png", alt="")
+              .cart--item__name.d-flex.justify-center.col
+                span(class="item--name d-flex w-100") спрей  tebodont 
+                span(class="item--text d-flex w-100") с маслом чайного дерева без фторида, 25 мл
+              .cart--item__price.d-flex.ai-center
+                p
+                  span(class="price--value") 30
                   span(class="price--currency") $
-              .cart--item__counter
-                button(type="button" class="item--btn minus") -
+              .cart--item__counter.d-flex.ai-center.justify-center
+                button(type="button" class="item--btn minus")
+                  img(src="img/minus.png", alt="Minus")
                 input(type="text" value="1" class="item--input")
-                button(type="button" class="item--btn plus") +
-              .cart--item__total
-                span(class="price--value") 15
+                button(type="button" class="item--btn plus")
+                  img(src="img/plus.png", alt="Plus")
+              .cart--item__total.d-flex.ai-center.justify-center
+                span(class="price--value") 30
                 span(class="price--currency") $
-              button(class="item--remove") x
+              button(class="item--remove")
+                img(src="img/remove.png", alt="")
           .cart--footer.d-flex.space-between
             p(class="cart--footer__counter") Выбрано товаров:
               span(class="cart--footer__count") 3

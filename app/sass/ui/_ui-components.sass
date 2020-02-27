@@ -161,3 +161,34 @@ select, input, textarea
   margin-bottom: 55px
   display: flex
   width: 100%
+.custom-checkbox--container
+  position: relative
+  & .input--checkbox
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
+    z-index: 2
+  & .checbox--custom
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    height: 30px
+    width: 30px
+    border: 1px solid #C4C4C4
+    box-sizing: border-box
+    z-index: 1
+    &:after
+      content: url("../img/check.png")
+      position: absolute
+      display: none
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+  & .input--checkbox:checked ~ .checbox--custom:after
+    display: block
