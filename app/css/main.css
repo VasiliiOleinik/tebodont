@@ -1540,7 +1540,20 @@ select, input, textarea {
     width: -webkit-calc(100% - 150px);
     width: calc(100% - 150px); }
   .pagetitle {
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+  .contacts--section {
+    max-width: 100%;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%; }
+  .contacts--section .contacts--item {
+    font-size: 16px;
+    margin-bottom: 15px; }
+  .contacts--section {
+    margin-bottom: 20px; }
+  .contacts--section .contacts--item .contacts--list a {
+    font-size: 16px; } }
 
 @media (max-width: 600px) {
   .footer--form form:after {
