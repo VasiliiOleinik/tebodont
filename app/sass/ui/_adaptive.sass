@@ -86,11 +86,24 @@
   .custom-checkbox--container .checbox--custom
     width: 20px
     height: 20px
+  .cart--checkout__left,
+  .cart--checkout__right
+    max-width: 100%
+    flex: 0 0 100%
+    padding: 0px
+  .cart--checkout__right .right--form-field .custom-checkbox--container .checkbox--text,
+  .cart--checkout__right .right--form-field .custom-checkbox--container .checkbox--text span
+    font-size: 14px
+  .cart--checkout__right .right--form-field .custom-checkbox--container
+    padding-left: 40px
+  .cart--checkout form
+    margin-bottom: 40px
 @include media( 600 )
   .footer--form form:after
     right: -3%
     top: -40%
-  .cart--content .cart--footer__btns
+  .cart--content .cart--footer__btns,
+  .cart--checkout .cart--footer__btns
     flex-direction: column
     margin-bottom: 30px
     & .link--btn
