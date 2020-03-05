@@ -60,9 +60,14 @@
           </div>
           <div class="product">
             <div class="box">
-              <div class="product--box col-50"></div>
               <div class="product--box col-50">
-                <div class="product--box__header">
+                <div class="product--card__slider"><img src="img/tebodont1.png" alt=""><img src="img/tebodont1.png" alt=""></div>
+                <button class="prouct-card__prev-slide" type="button"><img src="img/prod-arrow-prev.png" alt=""></button>
+                <button class="prouct-card__next-slide" type="button"><img src="img/prod-arrow-next.png" alt=""></button>
+                <div class="product--adaptive--box-js d-flex col w-100"></div>
+              </div>
+              <div class="product--box col-50">
+                <div class="product--box__header d-flex ai-end space-between">
                   <div class="product--header__title">Зубная паста с маслом чайного дерева и фторидом, 75 мл</div>
                   <div class="rating">
                     <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,17 +87,16 @@
                     </svg>
                   </div>
                 </div>
-                <div class="product--box__body">
-                  <div class="product--param"><span class="product--param__name">Возраст: </span><span class="product--param__value">18+</span></div>
-                  <div class="product--param"><span class="product--param__name">Назначение: </span><span class="product--param__value">лечение, очищение</span></div>
-                  <div class="product--param"><span class="product--param__name">Классификация: </span><span class="product--param__value">аптечная</span></div>
-                  <div class="product--param"><span class="product--param__name">Страна производитель: </span><span class="product--param__value">Швейцария</span></div>
-                  <p class="product--param__price">15$</p>
-                  <button class="addToCart" type="button">Добавить в корзину</button>
-                  <div class="product--tabs">
-                    <div class="product--tab">
-                      <div class="product--tab__header"><span>описание</span><span class="tab--header-ico"></span></div>
-                      <div class="product--tab__body">
+                <div class="product--box__body d-flex col">
+                  <div class="product--param d-flex ai-center"><span class="product--param__name">Возраст: </span><span class="product--param__value">18+</span></div>
+                  <div class="product--param d-flex ai-center"><span class="product--param__name">Назначение: </span><span class="product--param__value">лечение, очищение</span></div>
+                  <div class="product--param d-flex ai-center"><span class="product--param__name">Классификация: </span><span class="product--param__value">аптечная</span></div>
+                  <div class="product--param d-flex ai-center"><span class="product--param__name">Страна производитель: </span><span class="product--param__value">Швейцария</span></div>
+                  <p class="product--param__price">15$</p><a class="link--btn" href="javascript:void(0);">Добавить в корзину</a>
+                  <div class="product--tabs w-100 d-flex col">
+                    <div class="product--tab w-100 d-flex col">
+                      <div class="product--tab__header w-100"><span>описание</span><span class="tab--header-ico"></span></div>
+                      <div class="product--tab__body w-100">
                         <p>
                           Эта зубная паста предназначена для лечебного и профилактического ухода за воспаленными деснами и слизистой оболочкой полости рта, а также при значительном образовании зубных отложений. Она не только оказывает очищающее и общеоздоровительное действия, 
                           но и предотвращает кариес, гингивит, пародонтит, а также различные воспаления полости рта. стимулирует образование слюны 
@@ -126,7 +130,7 @@
           <div class="box">
             <div class="catalog w-100 d-flex col">
               <div class="catalog--section w-100 d-flex col">
-                <div class="catalog--section__title"><span>Смотрите также</span></div>
+                <div class="catalog--section__title product"><span>Смотрите также</span></div>
                 <div class="catalog--section__products d-flex w-100 flex-wrap">
                   <div class="catalog--product">
                     <div class="catalog--product__content d-flex col ai-center justify-center"><span class="catalog--product__discount d-flex ai-center justify-center">10%</span>

@@ -48,6 +48,9 @@
     display: none
   .brand--info .box
     max-width: 100%
+  .catalog--section__title.product:before,
+  .catalog--section__title.product:after
+    width: 32%
 @include media( 800 )
   .cart--content .cart--header
     font-size: 11px
@@ -234,6 +237,43 @@
     width: 100%
     flex: initial
     padding: 10px
+  .product
+    margin-bottom: 30px
+  .product .box
+    flex-direction: column-reverse
+    & .product--box
+      max-width: 100%
+      flex: initial
+      padding: 0px
+    & .product--box__header
+      flex-direction: column
+      justify-content: flex-start
+      align-items: flex-start
+      border-bottom: none
+      padding-bottom: 0px
+    & .product--box__header .product--header__title
+      max-width: 100%
+      margin-bottom: 15px
+  .product--box .prouct-card__prev-slide,
+  .product--box .prouct-card__next-slide
+    display: none
+  .product--adaptive--box-js
+    & .product--param__price
+      padding: 10px
+      border-top: 0.7px solid #9C9C9C
+      font-family: $lato
+      font-style: normal
+      font-weight: normal
+      font-size: 25px
+      line-height: 134.6%
+      color: #000000
+    & .link--btn
+      margin-top: 15px
+  .product--box .product--card__slider img
+    max-width: 170px
+  .product--box .prouct-card__next-slide,
+  .product--box .prouct-card__prev-slide
+    top: 200px
 @include media( 700 )
   .brand--info__infogra .infogra--center
     display: none
@@ -325,6 +365,10 @@
     max-width: 35%
   .catalog--banner__content .banner--paralax
     right: -90%
+  .product--box__body .product--param__name
+    font-size: 12px
+  .product .box .product--box__header .product--header__title
+    font-size: 20px
 @include media( 350 )
   .catalog--banner__content .banner--text .banner--title
     font-size: 12px

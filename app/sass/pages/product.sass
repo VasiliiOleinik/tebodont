@@ -1,0 +1,124 @@
+.product
+  margin-bottom: 120px
+  &--box
+    position: relative
+    &:first-of-type
+      padding: 0px 40px
+    & .prouct-card__next-slide
+      position: absolute
+      top: 50%
+      right: 40px
+    & .prouct-card__prev-slide
+      position: absolute
+      top: 50%
+      left: 40px
+    & .product--card__slider
+      & .slick-slide
+        & div
+          text-align: center
+      & .slick-dots
+        & li:not(.slick-active)
+          & button:before
+            color: transparent
+            border: 1px solid #3f3f3f
+            border-radius: 50%
+            width: 15px
+            height: 15px
+        & li button:before
+          font-size: 16px
+      & img
+        max-width: 215px
+        object-fit: cover
+    &__header
+      width: 100%
+      padding-bottom: 15px
+      margin-bottom: 10px
+      border-bottom: 0.7px solid #9C9C9C
+      & .product--header__title
+        max-width: 70%
+        width: 100%
+        font-family: $lato
+        font-style: normal
+        font-weight: normal
+        font-size: 25px
+        line-height: 134.6%
+        color: #5B5B5B
+    &__body
+      & .product--param
+        width: 100%
+        &__name
+          font-family: $algeria
+          font-style: normal
+          font-weight: 600
+          font-size: 18px
+          line-height: 168.2%
+          letter-spacing: 0.03em
+          color: #000000
+          margin-right: 10px
+        &__value
+          font-family: $algeria
+          font-style: normal
+          font-weight: 300
+          font-size: 16px
+          line-height: 168.2%
+          letter-spacing: 0.03em
+          color: #000000
+        &__price
+          margin: 15px 0px 25px 0px
+          font-family: $lato
+          font-style: normal
+          font-weight: normal
+          font-size: 25px
+          line-height: 134.6%
+          color: #000000
+      & .link--btn
+        margin-right: auto
+        margin-bottom: 40px
+  &--tabs
+    & .product--tab
+      border-top: 0.7px solid #9C9C9C
+      &__header
+        padding: 10px
+        border-bottom: 0.7px solid #9C9C9C
+        font-family: $lato
+        font-style: normal
+        font-weight: 300
+        font-size: 18px
+        line-height: 168.2%
+        letter-spacing: 0.03em
+        text-transform: uppercase
+        color: #000000
+        cursor: pointer
+        position: relative
+        & .tab--header-ico
+          position: absolute
+          right: 10px
+          top: 50%
+          transform: translateY(-50%)
+          transition: all .2s linear
+          &:after
+            content: '+'
+            font-size: 40px
+            font-weight: 600
+            transition: all .2s linear
+        &.active
+          & .tab--header-ico
+            &:after
+              transition: all .2s linear
+              content: '-'
+      &__body
+        padding: 25px 15px 30px 15px
+        font-family: $lato
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 165.2%
+        letter-spacing: 0.03em
+        color: #000000
+        border-bottom: 0.7px solid #9C9C9C
+        display: none
+.catalog--section__title.product
+  &:after
+    width: 36%
+  &:before
+    width: 36%

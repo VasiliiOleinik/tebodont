@@ -14,8 +14,16 @@ append content
     .product
       .box
         .product--box.col-50
+          .product--card__slider
+            img(src="img/tebodont1.png", alt="")
+            img(src="img/tebodont1.png", alt="")
+          button(type="button" class="prouct-card__prev-slide")
+            img(src="img/prod-arrow-prev.png", alt="")
+          button(type="button" class="prouct-card__next-slide")
+            img(src="img/prod-arrow-next.png", alt="")
+          .product--adaptive--box-js.d-flex.col.w-100
         .product--box.col-50
-          .product--box__header
+          .product--box__header.d-flex.ai-end.space-between
             .product--header__title Зубная паста с маслом чайного дерева и фторидом, 75 мл
             .rating
               svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
@@ -28,27 +36,27 @@ append content
                 path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
               svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
                 path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
-          .product--box__body
-            .product--param
+          .product--box__body.d-flex.col
+            .product--param.d-flex.ai-center
               span(class="product--param__name") Возраст: 
               span(class="product--param__value") 18+
-            .product--param
+            .product--param.d-flex.ai-center
               span(class="product--param__name") Назначение: 
               span(class="product--param__value") лечение, очищение
-            .product--param
+            .product--param.d-flex.ai-center
               span(class="product--param__name") Классификация: 
               span(class="product--param__value") аптечная
-            .product--param
+            .product--param.d-flex.ai-center
               span(class="product--param__name") Страна производитель: 
               span(class="product--param__value") Швейцария
             p(class="product--param__price") 15$
-            button(class="addToCart" type="button") Добавить в корзину
-            .product--tabs
-              .product--tab
-                .product--tab__header
+            a(class="link--btn" href="javascript:void(0);") Добавить в корзину
+            .product--tabs.w-100.d-flex.col
+              .product--tab.w-100.d-flex.col
+                .product--tab__header.w-100
                   span описание
                   span(class="tab--header-ico")
-                .product--tab__body
+                .product--tab__body.w-100
                   p Эта зубная паста предназначена для лечебного и профилактического ухода за воспаленными деснами и слизистой оболочкой полости рта, 
                     | а также при значительном образовании зубных отложений. Она не только оказывает очищающее и общеоздоровительное действия, 
                     | но и предотвращает кариес, гингивит, пародонтит, а также различные воспаления полости рта. стимулирует образование слюны 
@@ -73,7 +81,7 @@ append content
     .box
       .catalog.w-100.d-flex.col
         .catalog--section.w-100.d-flex.col
-          .catalog--section__title
+          .catalog--section__title.product
             span Смотрите также
           .catalog--section__products.d-flex.w-100.flex-wrap
             .catalog--product
