@@ -7,9 +7,27 @@
   .footer__central .footer__menu
     display: none
 @include media( 992 )
+  .catalog--section__products .catalog--product
+    width: 33.33%
+  .catalog--banner__big-img
+    width: 30%
+    top: 80px
+  .catalog--section__title:after
+    width: 40%
+  .catalog--banner__content .banner--text
+    position: relative
+    z-index: 9999
+  .reviews--title:after,
+  .reviews--title:before
+    width: 28%
+  .catalog--section__title span.emoflour:after
+    top: -18px
 @include media( 800 )
   .cart--content .cart--header
     font-size: 11px
+  .reviews--title:after,
+  .reviews--title:before
+    width: 25%
 @include media( 768 )
   .breadcrumbs
     display: none
@@ -33,7 +51,11 @@
   .footer__central .footer--logo,
   .header__menu,
   .header__management .header--currency,
-  .header__management .header--lang
+  .header__management .header--lang,
+  .catalog--section__title:before,
+  .catalog--section__title:after,
+  .reviews--title:after,
+  .reviews--title:before
     display: none
   .footer__central
     width: 100%
@@ -98,6 +120,70 @@
     padding-left: 40px
   .cart--checkout form
     margin-bottom: 40px
+  .catalog--section__products .catalog--product
+    width: 100%
+    min-height: initial
+    border-bottom: 2px solid #E5E5E5
+  .catalog--section__products .catalog--product__content
+    flex-direction: initial
+    flex-wrap: wrap
+    align-items: flex-start
+    justify-content: flex-start
+    padding: 0px
+    position: initial
+  .catalog--section__products .catalog--product__name
+    font-weight: normal
+    width: 100%
+    text-align: left
+  .catalog--section__products .catalog--product__img
+    width: 60px
+    height: auto
+    margin-bottom: 0
+    margin-right: 35px
+  .catalog--section__products .catalog--product__oldprice,
+  .catalog--section__products .catalog--product .link--btn,
+    display: block
+  .catalog--section__products .catalog--product__discount
+    display: flex
+    width: 42px
+    height: 42px
+    right: initial
+    left: 20px
+    left: 40px
+    top: 0
+  .catalog--section__title,
+  .catalog--section
+    margin-bottom: 30px
+  .main
+    overflow: hidden
+  .catalog--banner__content .banner--paralax
+    right: -150px
+  .catalog--banner
+    margin-bottom: 50px
+  .catalog--banner__content
+    height: auto
+  .reviews .review--text
+    padding: 15px
+  .reviews--title span
+    font-size: 13px
+  .catalog--section__title span.emoflour:after
+    z-index: -1
+  .catalog--section__products .catalog--info
+    width: calc(100% - 100px)
+    align-items: flex-start
+    justify-content: flex-start
+    flex-direction: initial
+    flex-wrap: wrap
+  .catalog--section__products .catalog--product__oldprice
+    margin-top: 10px
+    margin-right: 15px
+  .catalog--section__products .catalog--product__price
+    margin: 0
+    width: 70%
+    text-align: left
+  .catalog--section__products .catalog--product .link--btn
+    padding: 10px 20px
+    margin: 10px 0px
 @include media( 600 )
   .footer--form form:after
     right: -3%
@@ -111,3 +197,32 @@
       &:first-of-type
         order: 2
         margin-top: 10px
+  .catalog--banner__content .banner--text
+    padding-left: 100px
+  .catalog--banner__content .banner--text .banner--title
+    font-size: 15px
+  .catalog--banner__content .banner--text .banner--description
+    font-size: 13px
+  .catalog--banner__content .banner--paralax img
+    max-width: 55%
+  .catalog--banner__content .banner--paralax
+    right: -65%
+  .banner--img img
+    max-width: 70%
+  .catalog--banner__big-img
+    top: 25px
+  .reviews .add-review
+    width: 100%
+    margin: 0 auto
+  .reviews
+    margin-bottom: 20px
+@include media( 450 )
+  .catalog--banner__content .banner--text
+    padding-left: 70px
+  .catalog--banner__content .banner--paralax img
+    max-width: 35%
+  .catalog--banner__content .banner--paralax
+    right: -90%
+@include media( 350 )
+  .catalog--banner__content .banner--text .banner--title
+    font-size: 12px

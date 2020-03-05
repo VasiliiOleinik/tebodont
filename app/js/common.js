@@ -48,19 +48,21 @@ $(function() {
   });
 
   // Hover product card
-  $('.catalog--product').hover(function(){
-    $(this).css({'z-index': '999'});
-    $(this).find('.catalog--product__content').addClass('active');
-    $(this).find('.catalog--product__discount').css({'display':'flex'});
-    $(this).find('.catalog--product__oldprice').slideDown(100);
-    $(this).find('.link--btn').slideDown(100);
-  }, function() {
-    $(this).css({'z-index': '1'});
-    $(this).find('.catalog--product__content').removeClass('active');
-    $(this).find('.catalog--product__discount').css({'display':'none'});
-    $(this).find('.catalog--product__oldprice').slideUp(100);
-    $(this).find('.link--btn').slideUp(100);
-  });
+  if(screen.width > 767) {
+    $('.catalog--product').hover(function(){
+      $(this).css({'z-index': '999'});
+      $(this).find('.catalog--product__content').addClass('active');
+      $(this).find('.catalog--product__discount').css({'display':'flex'});
+      $(this).find('.catalog--product__oldprice').slideDown(100);
+      $(this).find('.link--btn').slideDown(100);
+    }, function() {
+      $(this).css({'z-index': '1'});
+      $(this).find('.catalog--product__content').removeClass('active');
+      $(this).find('.catalog--product__discount').css({'display':'none'});
+      $(this).find('.catalog--product__oldprice').slideUp(100);
+      $(this).find('.link--btn').slideUp(100);
+    });
+  }
   // Slider
   $('.reviews--carousel').slick({
     dots: true,
