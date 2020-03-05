@@ -7,6 +7,9 @@
   .footer__central .footer__menu
     display: none
 @include media( 992 )
+@include media( 800 )
+  .cart--content .cart--header
+    font-size: 11px
 @include media( 768 )
   .breadcrumbs
     display: none
@@ -61,7 +64,37 @@
     margin-bottom: 20px
   .contacts--section .contacts--item .contacts--list a
     font-size: 16px
+  .cart--content .cart--header
+    display: none
+  .cart--content .cart--body .cart--item__counter .item--btn
+    display: none
+  .cart--content .cart--body .cart--item__total
+    display: none
+  .cart--content .cart--body .cart--item__name
+    width: 70%
+    padding-left: 15px
+  .cart--content .cart--footer
+    margin-bottom: 40px
+  .cart--content .cart--body .cart--item__name .item--text
+    margin-bottom: 12px
+  .cart--content .cart--body .cart--item__counter
+    flex-direction: column-reverse
+    justify-content: space-between
+    width: 50px
+  .cart--content .cart--body .cart--item .item--remove
+    width: 100%
+  .custom-checkbox--container .checbox--custom
+    width: 20px
+    height: 20px
 @include media( 600 )
   .footer--form form:after
     right: -3%
     top: -40%
+  .cart--content .cart--footer__btns
+    flex-direction: column
+    margin-bottom: 30px
+    & .link--btn
+      width: 100%
+      &:first-of-type
+        order: 2
+        margin-top: 10px

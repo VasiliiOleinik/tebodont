@@ -90,4 +90,16 @@ $(function() {
       },
     ],
   });
+
+  // Adaptive
+  if(screen.width < 768) {
+    $('.cart--item').each(function(index, item) {
+      var adaptPrice = $(item).find(".cart--item__price");
+      var adaptName = $(item).find(".cart--item__name");
+      var adaptConter = $(item).find('.cart--item__counter');
+      var adaptDel = $(item).find('.item--remove');
+      adaptName.append(adaptPrice);
+      adaptConter.append(adaptDel);
+    });
+  }
 });
