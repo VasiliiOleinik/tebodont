@@ -1,6 +1,7 @@
 $(function() {
   // Cart product counter
     $('.cart--item__checbox input').on('change', function(){
+      var totalText = $('.cart--footer__count').text();
       if($(this).prop("checked") == true) {
         $('.cart--footer__count').text(Number.parseInt(totalText) + 1);
       } else if($(this).prop("checked") == false){
@@ -10,9 +11,6 @@ $(function() {
     // Remove products
     $('.item--btn.minus').on('click', function() {
       var inpVal = $(this).siblings('.item--input').val();
-      var price = $(this).parent().siblings('.cart--item__price').find('.price--value').text();
-      var total = $(this).parent().siblings('.cart--item__total').find('.price--value');
-      var totalText = $('.cart--footer__count').text();
       if(inpVal == 1) {
         $(this).siblings('.item--input').val(1);
       } else {
@@ -22,9 +20,6 @@ $(function() {
     // Add products
     $('.item--btn.plus').on('click', function() {
       var inpVal = $(this).siblings('.item--input').val();
-      var price = $(this).parent().siblings('.cart--item__price').find('.price--value').text();
-      var total = $(this).parent().siblings('.cart--item__total').find('.price--value');
-      var totalText = $('.cart--footer__count').text();
       $(this).siblings('.item--input').val(++inpVal);
     });
 
@@ -41,5 +36,58 @@ $(function() {
   });
   $('.header--lang_list li').on('click', function() {
     $('.header--lang__active').text($(this).find('a').text());
+  });
+
+  // Toggle delivery adress
+  $('.right--form-field .input--checkbox').on('change', function() {
+    if($(this).val() == 'np'){
+      $(this).parent().parent().find('.additionalInput').slideDown();
+    } else {
+      $(this).parent().parent().find('.additionalInput').slideDown();
+    }
+  });
+
+  // Hover product card
+  $('.catalog--product').hover(function(){
+    $(this).css({'z-index': '999'});
+    $(this).find('.catalog--product__content').addClass('active');
+    $(this).find('.catalog--product__discount').css({'display':'flex'});
+    $(this).find('.catalog--product__oldprice').slideDown(100);
+    $(this).find('.link--btn').slideDown(100);
+  }, function() {
+    $(this).css({'z-index': '1'});
+    $(this).find('.catalog--product__content').removeClass('active');
+    $(this).find('.catalog--product__discount').css({'display':'none'});
+    $(this).find('.catalog--product__oldprice').slideUp(100);
+    $(this).find('.link--btn').slideUp(100);
+  });
+  // Slider
+  $('.reviews--carousel').slick({
+    dots: true,
+    autoplay: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    arrows: true,
+    prevArrow: $('.slide-prev'),
+    nextArrow: $('.slide-next'),
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          arrows: false,
+        },
+      },
+    ],
   });
 });

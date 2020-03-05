@@ -1,0 +1,57 @@
+extends blocks/_layout
+append content
+  main.main
+    .box.flex-wrap
+      ul.breadcrumbs.d-flex.w-100
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") Главная
+        li(class="breadcrumbs--elem separator") /
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") Оформление заказа
+      .cart--checkout.d-flex.col.w-100
+        form(action="" class="d-flex w-100 flex-wrap")
+          .cart--checkout__left.d-flex.col.col-50
+            h2(class="pagetitle") контактная информация
+            .left--form-field
+              input(type="text" name="fullName" placeholder="ФИО")
+            .left--form-field
+              input(type="text" name="deliveryAdress" placeholder="Адрес доставки")
+            .left--form-field
+              input(type="text" name="phone" placeholder="Телефон")
+            .left--form-field
+              textarea(name="comment" placeholder="Ваш комментарий")
+          .cart--checkout__right.d-flex.col.col-50
+            h2(class="pagetitle") способ доставки
+            .right--form-field
+              label.cart--item__checbox.custom-checkbox--container.d-flex
+                input(type="radio" name="deliveryCheck" class="input--checkbox" value="np")
+                span(class="checbox--custom")
+                p(class="checkbox--text d-flex col") Новая почта
+                  span Доставка оплачивается дополнительно по тарифам почты
+              input(type="text" name="deliveryAdress" placeholder="Адрес потчового отделения" class="additionalInput")
+            .right--form-field
+              label.cart--item__checbox.custom-checkbox--container.d-flex
+                input(type="radio" name="deliveryCheck" class="input--checkbox" value="courier")
+                span(class="checbox--custom")
+                p(class="checkbox--text d-flex col") Курьером до двери
+                  span Доставка осуществляется курьером Новой почты, оплачивается дополнительно по тарифам почты
+            .right--form-field
+              label.cart--item__checbox.custom-checkbox--container.d-flex
+                input(type="radio" name="deliveryCheck" class="input--checkbox" value="sam")
+                span(class="checbox--custom")
+                p(class="checkbox--text d-flex col") Самовывоз
+                  span Из офиса по адресу: Бутышев переулок 14, офис 2, Киев, Украина, 01010
+            .right--form-field
+              label.cart--item__checbox.custom-checkbox--container.d-flex
+                input(type="radio" name="deliveryCheck" class="input--checkbox" value="gift")
+                span(class="checbox--custom")
+                p(class="checkbox--text d-flex col") Бесплатно
+                  span при покупке на 1000грн доставка Новой почтой за наш счет!
+        .cart--footer__btns.d-flex.ai-center.space-between.w-100
+          a(href="cart.html" class="link--btn") назад
+          a(href="cart-final.html" class="link--btn active") Готово
+      .footer--form.d-flex.w-100.ai-center.justify-center
+        span(class="footer--form__text") УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!
+        form(class="d-flex ai-center" action="")
+          input(class="footer--form__input" name="email" type="text" placeholder="E-mail")
+          button(class="footer--form__btn" type="submit") подписаться

@@ -1,0 +1,270 @@
+extends blocks/_layout
+append content
+  main.main
+    .box.flex-wrap
+      ul.breadcrumbs.d-flex.w-100
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") Главная
+        li(class="breadcrumbs--elem separator") /
+        li(class="breadcrumbs--elem")
+          a(class="breadcrumb--link" href="/") Tebodont
+    .brand
+      .brand--img
+        img(class="js-parallax", data-size="10", src="img/tebodont-banner-par.png", alt="")
+      .box
+        .brand--banner.d-flex.ai-start
+          .col-50
+            h1(class="brand--banner__title") TEBODONT
+            p(class="brand--banner__description") Швейцарская продукция с маслом чайного дерева для оптимального ухода за зубами и ротовой полостью
+            a(class="link--btn" href="catalog.html") Каталог
+          .col-50.brand--prod-img
+            img(src="img/tebodont-banner-img.png", alt="")
+            p(class='brand--banner__info') Продукция
+              b TEBODONT®
+              | представлена эксклюзивно в аптеках и стоматологических клиниках
+    .brand--info
+      .box.col
+        .brand--info__title.d-flex.w-100.ai-center.justify-center
+          span tebodont
+          | - зубная паста здорового человека!
+        .brand--info__infogra.d-flex.ai-center.justify-center
+          .infogra--left.d-flex.col
+            .infogra--box.first.tooth
+              span Рекомендовано лучшими<br> стоматологами
+              img(src="img/tooth.png", alt="")
+            .infogra--box.second.procent
+              span 83% покупателей<br>  пользуются регулярно
+          .infogra--center.d-flex.ai-center.justify-center
+            img(src="img/tebobont-info-past.png", alt="")
+          .infogra--right.d-flex.col
+            .infogra--box.third.country.d-flex.ai-start
+                img(src="img/switherland.png", alt="")
+                span Швейцарское<br>  качество
+            .infogra--box.fourth.procent
+              span Паста, которой<br>  хватает надолго
+              img(src="img/clock.png", alt="")
+        .brand--infogra__footer.d-flex.ai-center.justify-center теперь твой визит к стоматологу станет приятным
+    .box.flex-wrap
+      .catalog.w-100.d-flex.col
+        .catalog--section.w-100.d-flex.col
+          .catalog--section__title
+            span TEBODONT
+          .catalog--section__products.d-flex.w-100.flex-wrap
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont1.png", alt="")
+                span(class="catalog--product__name") Зубная паста с маслом чайного дерева, без фторида, 75 мл
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont2.png", alt="")
+                span(class="catalog--product__name") Зубная паста с маслом чайного дерева и фторидом, 75 мл
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont3.png", alt="")
+                span(class="catalog--product__name") Ополаскиватель для полости рта  без фторида, 400 мл
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont4.png", alt="")
+                span(class="catalog--product__name") Спрей с маслом чайного дерева, без фторида, 25 мл
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont5.png", alt="")
+                span(class="catalog--product__name") Бальзам для губ с маслом чайного дерева, 2*5 г
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont6.png", alt="")
+                span(class="catalog--product__name") Роликовая туба с маслом чайного дерева,  20 мл
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont7.png", alt="")
+                span(class="catalog--product__name") Гель с маслом чайного дерева, без фторида, 18 мл
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+            .catalog--product
+              .catalog--product__content.d-flex.col.ai-center.justify-center
+                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
+                .catalog--product__img.d-flex.col.ai-center.justify-center
+                  img(src="img/tebodont8.png", alt="")
+                span(class="catalog--product__name") Зубная нить с маслом чайного дерева и фторидом натрия, 50 м
+                span(class="catalog--product__oldprice") 15$
+                span(class="catalog--product__price") 13$
+                a(class="link--btn" href="cart.html") В корзину
+    .catalog--banner.w-100
+      img(class="catalog--banner__big-img", src="img/big-leaf.png", alt="")
+      .box
+        .catalog--banner__content.d-flex
+          .banner--text.d-flex.col.justify-center
+            span(class="banner--title") вместе  дешевле!
+            span(class="banner--description") купите набор и получите скидку и подарки!
+          .banner--img
+            img(src="img/catalog-banner-img.png", alt="")
+          .banner--paralax
+            img(class="js-parallax", data-size="10", src="img/leaf-group.png", alt="")
+    .box.reviews.d-flex.col.w-100
+      .reviews--title
+        span отзывы покупателей
+      .reviews--carousel
+        .review.d-flex.col.ai-center.justify-center
+          img(class="review--img", src="img/photo1.png", alt="")
+          span(class="review--name") евгений
+          span(class="review--date") 18 января 2020
+          .rating
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+          .review--text
+            p Начали пользоваться по совету врача. Чистит хорошо, приятно пахнет. К послевкусию привыкли быстро. Только брали без фтора.
+        .review.d-flex.col.ai-center.justify-center
+          img(class="review--img", src="img/photo 2.png", alt="")
+          span(class="review--name") АЛЕКСЕЙ
+          span(class="review--date") 23 марта 2019
+          .rating
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+          .review--text
+            p Отличная зубная паста. Пользуюсь в основном ей и этой же компании - пастой Emoform-F Protect и ополаскивателем Tebodont. С зубами и деснами на протяжении этого времени все отлично.
+        .review.d-flex.col.ai-center.justify-center
+          img(class="review--img", src="img/photo1.png", alt="")
+          span(class="review--name") ВЕРОНИКА
+          span(class="review--date") 11 ноября 2019
+          .rating
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+          .review--text
+              p Дорогая но очень качественная паста. Купила по совету стоматолога и не пожалела. Очень хорошо очищает и оставляет приятную свежесть. Брала из за пародонтоза. Сейчас кровоточивость не наблюдаю.
+        .review.d-flex.col.ai-center.justify-center
+          img(class="review--img", src="img/photo1.png", alt="")
+          span(class="review--name") евгений
+          span(class="review--date") 18 января 2020
+          .rating
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+          .review--text
+            p Начали пользоваться по совету врача. Чистит хорошо, приятно пахнет. К послевкусию привыкли быстро. Только брали без фтора.
+        .review.d-flex.col.ai-center.justify-center
+          img(class="review--img", src="img/photo 2.png", alt="")
+          span(class="review--name") АЛЕКСЕЙ
+          span(class="review--date") 23 марта 2019
+          .rating
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+          .review--text
+            p Отличная зубная паста. Пользуюсь в основном ей и этой же компании - пастой Emoform-F Protect и ополаскивателем Tebodont. С зубами и деснами на протяжении этого времени все отлично.
+        .review.d-flex.col.ai-center.justify-center
+          img(class="review--img", src="img/photo 3.png", alt="")
+          span(class="review--name") ВЕРОНИКА
+          span(class="review--date") 11 ноября 2019
+          .rating
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+            svg(width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg")
+              path(d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4")
+          .review--text
+            p Дорогая но очень качественная паста. Купила по совету стоматолога и не пожалела. Очень хорошо очищает и оставляет приятную свежесть. Брала из за пародонтоза. Сейчас кровоточивость не наблюдаю.
+      button(class="slide-prev" type="button")
+        img(src="img/btn-prev.png", alt="")
+      button(class="slide-next" type="button")
+        img(src="img/btn-next.png", alt="")
+      button(class="add-review" type="button") Добавить отзыв
+    .brand--footer
+      .brand--footer-par
+        img(src="img/brand-tebodont.png", alt="" class="js-parallax", data-size="10")
+      .box.w-100.col
+        .brand--footer__content.d-flex.col.w-100.ai-center
+          span.brand--footer__tite Больше, чем просто уход...
+          p(class="brand--footer__text")  Объединив опыт поколений и данные последних научных исследований в области профессионального ухода 
+            | за полостью рта, компания Dr. Wild создала инновационную линейку продуктов под маркой 
+            | TEBODONT®. Помимо основного ухода оказывает успокаивающее, лечебное, укрепляющее и восстанавливающее воздействие на десны. 
+            | эффективен при лечении  повышенного образования зубного налета, гингивита, пародонтита и воспалений в полости рта. 
+        .brand--footer__banner.d-flex.ai-center
+          .col-50
+            img(src="img/tebodont-ingrid.png", alt="" class="brand--footer__img")
+          .col-50
+            span(class="brand--banner__title") ингридиенты:
+            p(class="brand--banner__text") Масло чайного дерева обладает противовоспалительным и антисептическим действием.<br>
+              | Доказано положительное действие продуктов, содержащих масло чайного дерева на микроорганизмы ротовой полости.
+            a(href="/" class="brand--banner__link") смотреть презентацию продукта
+    .box
+      .footer--form.d-flex.w-100.ai-center.justify-center
+        span(class="footer--form__text") УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!
+        form(class="d-flex ai-center" action="")
+          input(class="footer--form__input" name="email" type="text" placeholder="E-mail")
+          button(class="footer--form__btn" type="submit") подписаться

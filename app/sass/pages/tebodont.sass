@@ -1,0 +1,209 @@
+.brand
+  position: relative
+  margin-bottom: 70px
+  &--img
+    position: absolute
+    left: 10%
+    top: -20%
+    & img
+      position: relative
+  &--banner
+    padding-left: 50px
+    &__title
+      font-family: $algeria
+      font-style: normal
+      font-weight: bold
+      font-size: 70px
+      line-height: 84px
+      letter-spacing: 0.03em
+      text-transform: uppercase
+      color: #4D4D4D
+      margin-bottom: 30px
+    &__description
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      letter-spacing: 0.03em
+      color: #000000
+      margin-bottom: 60px
+    & .brand--prod-img
+      position: relative
+    &__info
+      position: absolute
+      left: 0
+      bottom: 40px
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 14px
+      line-height: 17px
+      color: #000000
+.brand--info
+  & .box
+    max-width: 55%
+  &__title
+    font-family: Lato
+    font-style: normal
+    font-weight: 300
+    font-size: 25px
+    text-transform: uppercase
+    color: #000000
+    margin-bottom: 40px
+    & span
+      font-weight: normal
+  &__infogra
+    & .infogra--left
+      width: 33.33%
+      padding-right: 30px
+    & .infogra--center
+      width: 33.33%
+      flex-shrink: 0
+      position: relative
+      z-index: 999
+    & .infogra--right
+      width: 33.33%
+      padding-left: 30px
+    & .infogra--box
+      height: 220px
+      width: 100%
+      position: relative
+      &.first.tooth
+        & img
+          position: absolute
+          right: 0
+          top: -15%
+          z-index: -1
+        &:after
+          content: url('../img/first.png')
+          position: relative
+          bottom: 0
+          left: 53%
+      &.second.procent
+        padding-left: 100px
+        &:before
+          content: '83%'
+          position: absolute
+          left: -50px
+          top: -70px
+          font-family: $lato
+          font-style: normal
+          font-weight: 900
+          font-size: 90px
+          line-height: 134.6%
+          color: #3A9248
+          opacity: 0.07
+        &:after
+          content: url('../img/second.png')
+          position: absolute
+          bottom: 30px
+          left: 13%
+      &.third.country
+        & img
+          flex-shrink: 0
+          object-fit: contain
+        &:after
+          content: url('../img/third.png')
+          position: absolute
+          bottom: 0
+          left: -30%
+      &.fourth.procent
+        padding-left: 100px
+        & img
+          position: absolute
+          top: 20px
+          right: 20px
+        &:after
+          content: url('../img/fourth.png')
+          position: absolute
+          bottom: 110px
+          left: -30%
+  & .brand--infogra__footer
+    max-width: 400px
+    margin: 0 auto
+    font-family: $lato
+    font-style: italic
+    font-weight: 300
+    font-size: 25px
+    line-height: 134.6%
+    text-align: center
+    text-transform: capitalize
+    color: #000000
+    margin-top: 20px
+    margin-bottom: 70px
+    position: relative
+    &:after
+      content: url('../img/tebodont-title.png')
+      position: absolute
+      top: 20px
+      right: 0
+.brand--footer
+  position: relative
+  &-par
+    position: absolute
+    right: 0
+    overflow: hidden
+    & img
+      position: relative
+  &__content
+    & .brand--footer__tite
+      font-family: $lato
+      font-style: italic
+      font-weight: 300
+      font-size: 30px
+      line-height: 134.6%
+      text-align: center
+      color: #000000
+      margin-bottom: 20px
+      display: block
+    & .brand--footer__text
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 134.6%
+      text-align: center
+      color: #000000
+  &__banner
+    max-width: 90%
+    width: 100%
+    position: relative
+    width: 100%
+    height: 300px
+    background-color: #FAFAFA
+    background-image: url('../img/catalog-banner-bg.png')
+    box-shadow: 3px 7px 27px rgba(0, 0, 0, 0.25)
+    margin-bottom: 200px
+    margin-top: 120px
+    & .col-50
+      position: relative
+    & .brand--footer__img
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%, -50%)
+    & .brand--banner__title
+      font-family: $lato
+      font-style: normal
+      font-weight: normal
+      font-size: 20px
+      line-height: 134.6%
+      text-align: center
+      color: #383838
+      text-transform: uppercase
+      margin-bottom: 10px
+    & .brand--banner__text
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 18px
+      line-height: 123.6%
+      color: #000000
+      margin-bottom: 10px
+    & .brand--batter__link
+      font-family: $lato
+      font-style: italic
+      font-weight: 300
+      font-size: 18px
+      line-height: 123.6%
+      color: #5B5B5B

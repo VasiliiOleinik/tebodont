@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/img/favicon.ico" rel="shortcut icon">
+    <link type="text/css" href="css/libs.min.css" rel="stylesheet">
+    <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/lato.css">
+    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700&amp;display=swap" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <title>Tebodont</title>
+  </head>
+  <body>
+    <div class="content-wrapper" id="contentWrapper">
+      <div class="page-wrapper" id="pageWrapper">
+        <header class="header">
+          <div class="box h-100 ai-center">
+            <div class="header__body d-flex ai-center w-100">
+              <div class="header__logo"><a href=""><img src="img/logo.svg" alt="Logo"></a></div>
+              <nav class="header__menu">
+                <ul class="header__menu-list d-flex">
+                  <li class="menu--item"><a href="/">каталог</a></li>
+                  <li class="menu--item"><a href="/">о нас</a></li>
+                  <li class="menu--item"><a href="/">доставка</a></li>
+                  <li class="menu--item"><a href="/">контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header__management d-flex ai-center">
+                <div class="header--currency"><span class="header--currency__active">USD</span>
+                  <ul class="header--currency_list">
+                    <li class="header--currency_item"><a href="/">USD</a></li>
+                    <li class="header--currency_item"><a href="/">EUR</a></li>
+                    <li class="header--currency_item"><a href="/">UAH</a></li>
+                  </ul>
+                </div>
+                <div class="header--lang"><span class="header--lang__active">RU</span>
+                  <ul class="header--lang_list">
+                    <li class="header--lang_item"><a href="/">RU</a></li>
+                    <li class="header--lang_item"><a href="/">UA</a></li>
+                    <li class="header--lang_item"><a href="/">EN</a></li>
+                  </ul>
+                </div><a class="header--cart" href="cart.html"><img src="img/cart.svg" alt="Cart ico"><span class="header--cart_counter d-flex ai-center justify-center">3</span></a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="box flex-wrap">
+            <ul class="breadcrumbs d-flex w-100">
+              <li class="breadcrumbs--elem"><a class="breadcrumb--link" href="/">Главная</a></li>
+              <li class="breadcrumbs--elem separator">/</li>
+              <li class="breadcrumbs--elem"><a class="breadcrumb--link" href="/">Оформление заказа</a></li>
+            </ul>
+            <div class="cart--checkout d-flex col w-100">
+              <form class="d-flex w-100 flex-wrap" action="">
+                <div class="cart--checkout__left d-flex col col-50">
+                  <h2 class="pagetitle">контактная информация</h2>
+                  <div class="left--form-field">
+                    <input type="text" name="fullName" placeholder="ФИО">
+                  </div>
+                  <div class="left--form-field">
+                    <input type="text" name="deliveryAdress" placeholder="Адрес доставки">
+                  </div>
+                  <div class="left--form-field">
+                    <input type="text" name="phone" placeholder="Телефон">
+                  </div>
+                  <div class="left--form-field">
+                    <textarea name="comment" placeholder="Ваш комментарий"></textarea>
+                  </div>
+                </div>
+                <div class="cart--checkout__right d-flex col col-50">
+                  <h2 class="pagetitle">способ доставки</h2>
+                  <div class="right--form-field">
+                    <label class="cart--item__checbox custom-checkbox--container d-flex">
+                      <input class="input--checkbox" type="radio" name="deliveryCheck" value="np"><span class="checbox--custom"></span>
+                      <p class="checkbox--text d-flex col">Новая почта<span>Доставка оплачивается дополнительно по тарифам почты</span></p>
+                    </label>
+                    <input class="additionalInput" type="text" name="deliveryAdress" placeholder="Адрес потчового отделения">
+                  </div>
+                  <div class="right--form-field">
+                    <label class="cart--item__checbox custom-checkbox--container d-flex">
+                      <input class="input--checkbox" type="radio" name="deliveryCheck" value="courier"><span class="checbox--custom"></span>
+                      <p class="checkbox--text d-flex col">Курьером до двери<span>Доставка осуществляется курьером Новой почты, оплачивается дополнительно по тарифам почты</span></p>
+                    </label>
+                  </div>
+                  <div class="right--form-field">
+                    <label class="cart--item__checbox custom-checkbox--container d-flex">
+                      <input class="input--checkbox" type="radio" name="deliveryCheck" value="sam"><span class="checbox--custom"></span>
+                      <p class="checkbox--text d-flex col">Самовывоз<span>Из офиса по адресу: Бутышев переулок 14, офис 2, Киев, Украина, 01010</span></p>
+                    </label>
+                  </div>
+                  <div class="right--form-field">
+                    <label class="cart--item__checbox custom-checkbox--container d-flex">
+                      <input class="input--checkbox" type="radio" name="deliveryCheck" value="gift"><span class="checbox--custom"></span>
+                      <p class="checkbox--text d-flex col">Бесплатно<span>при покупке на 1000грн доставка Новой почтой за наш счет!</span></p>
+                    </label>
+                  </div>
+                </div>
+              </form>
+              <div class="cart--footer__btns d-flex ai-center space-between w-100"><a class="link--btn" href="cart.html">назад</a><a class="link--btn active" href="cart-final.html">Готово</a></div>
+            </div>
+            <div class="footer--form d-flex w-100 ai-center justify-center"><span class="footer--form__text">УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!</span>
+              <form class="d-flex ai-center" action="">
+                <input class="footer--form__input" name="email" type="text" placeholder="E-mail">
+                <button class="footer--form__btn" type="submit">подписаться</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer-wrapper" id="footerWrapper">
+        <footer class="footer">
+          <div class="box">
+            <div class="footer__body d-flex w-100">
+              <div class="footer__contacts d-flex ai-start"><img src="img/phone.svg" alt="Phone">
+                <div class="footer__contacts--info d-flex col"><span class="footer--text">Звонки бесплатны на территории Украины</span><span class="footer--text">0 800 500 362 многоканальный</span><span class="footer--text">+380 44 500 68 00 многоканальный тел./факс</span><span class="footer--text">+380 50 380 49 42 (МТС)</span><span class="footer--text">+380 68 492 68 00 (Киевстар)</span></div>
+              </div>
+              <div class="footer__central d-flex col ai-center justify-center p-RL20"><a class="footer--logo" href="/"><img src="img/logo.svg" alt="Logo"></a><span class="footer--name">ООО СВИСС-ТРЕЙД</span>
+                <nav class="footer__menu d-flex ai-center">
+                  <ul class="footer__menu-list d-flex">
+                    <li class="menu--item"><a href="/">каталог</a></li>
+                    <li class="menu--item"><a href="/">о нас</a></li>
+                    <li class="menu--item"><a href="/">доставка</a></li>
+                    <li class="menu--item"><a href="/">контакты</a></li>
+                  </ul>
+                  <div class="footer--currency"><span class="footer--currency__active">USD</span>
+                    <ul class="footer--currency_list">
+                      <li class="footer--currency_item"><a href="/">USD</a></li>
+                      <li class="footer--currency_item"><a href="/">EUR</a></li>
+                      <li class="footer--currency_item"><a href="/">UAH</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer--lang"><span class="footer--lang__active">RU</span>
+                    <ul class="footer--lang_list">
+                      <li class="footer--lang_item"><a href="/">RU</a></li>
+                      <li class="footer--lang_item"><a href="/">UA</a></li>
+                      <li class="footer--lang_item"><a href="/">EN</a></li>
+                    </ul>
+                  </div>
+                </nav><span class="footer--copyright">Copyright © 2020 Дизайн: FoxDesign</span>
+              </div>
+              <div class="footer__right d-flex col">
+                <div class="footer__right--mail d-flex ai-start"><img src="img/mail.svg" alt="Mail"><span class="footer--text">info@swisstrade.com.ua</span></div>
+                <div class="footer__right--location d-flex ai-start"><img src="img/location.svg" alt="location"><span class="footer--text">Бутышев переулок 14, офис 2, Киев, Украина, 01010</span></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/paralax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
