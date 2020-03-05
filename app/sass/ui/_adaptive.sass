@@ -1,0 +1,57 @@
+@include media( 1200 )
+  .footer--form
+    flex-direction: column
+  .footer--form__text
+    margin-bottom: 25px
+    font-size: 12px
+  .footer__central .footer__menu
+    display: none
+@include media( 992 )
+@include media( 768 )
+  .breadcrumbs
+    display: none
+  .delivery--content .delivery--item
+    max-width: 100%
+    flex: 0 0 100%
+    margin-bottom: 30px
+    padding-right: 0px
+  .delivery--content .delivery--item__img
+    width: 55px
+    height: 55px
+    margin-right: 20px
+    & img
+      max-width: 50%
+  .delivery--content .delivery--item .delivery--name
+    font-size: 16px
+  .delivery--content .delivery--item .delivery--text
+    font-size: 14px
+  .footer__right,
+  .footer__contacts,
+  .footer__central .footer--logo,
+  .header__menu,
+  .header__management .header--currency,
+  .header__management .header--lang
+    display: none
+  .footer__central
+    width: 100%
+    padding: 0px
+  .footer
+    padding: 14px 0px
+  .header__body
+    position: relative
+  .header__logo
+    position: absolute
+    left: 50%
+    transform: translateX(calc(-50% - 10px))
+  .footer--form form .footer--form__btn
+    max-width: 150px
+    font-size: 11px
+  .footer--form form .footer--form__input
+    font-size: 13px
+    width: calc(100% - 150px)
+  .pagetitle
+    margin-bottom: 30px
+@include media( 600 )
+  .footer--form form:after
+    right: -3%
+    top: -40%
