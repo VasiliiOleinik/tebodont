@@ -1,3 +1,13 @@
+@include media( 1600 )
+  .brand--info__infogra .infogra--box.second.procent
+    padding-left: 0px
+  .brand--info__infogra .infogra--left
+    padding-right: 0px
+  .brand--info__infogra .infogra--right
+    padding-left: 0px
+@include media( 1250 )
+  .brand--info .box
+    max-width: 70%
 @include media( 1200 )
   .footer--form
     flex-direction: column
@@ -22,6 +32,22 @@
     width: 28%
   .catalog--section__title span.emoflour:after
     top: -18px
+  .brand--img
+    display: none
+  .brand--banner .col-50
+    max-width: 100%
+    flex: initial
+    justify-self: center
+    align-items: center
+    text-align: center
+    display: flex
+    flex-direction: column
+  .brand--banner
+    flex-direction: column
+  .brand--banner .brand--prod-img
+    display: none
+  .brand--info .box
+    max-width: 100%
 @include media( 800 )
   .cart--content .cart--header
     font-size: 11px
@@ -184,6 +210,64 @@
   .catalog--section__products .catalog--product .link--btn
     padding: 10px 20px
     margin: 10px 0px
+  .brand--info__title
+    font-size: 18px
+  .brand--banner
+    padding-left: 0px
+  .reviews,
+  .brand--footer__banner
+    margin-bottom: 30px
+  .brand--footer-par
+    display: none
+  .brand--footer__banner .brand--footer__img
+    position: initial
+    transform: initial
+    margin: 0 auto
+    display: flex
+  .brand--footer__banner
+    max-width: 100%
+    margin-top: 40px
+    flex-direction: column
+    height: auto
+  .brand--footer__banner .col-50
+    max-width: 100%
+    width: 100%
+    flex: initial
+    padding: 10px
+@include media( 700 )
+  .brand--info__infogra .infogra--center
+    display: none
+  .brand--info__infogra .infogra--box:after,
+  .brand--info__infogra .infogra--box:before
+    display: none !important
+  .brand--info__infogra .infogra--box.second.procent:before
+    display: block !important
+    left: 0
+  .brand--info__infogra .infogra--box.second.procent span
+    display: flex
+    margin-left: auto
+  .brand--info__infogra
+    flex-direction: column
+    justify-content: flex-start
+    align-items: flex-start
+  .brand--info__infogra .infogra--left,
+  .brand--info__infogra .infogra--right
+    width: 100%
+  .brand--info__infogra .infogra--box
+    height: auto
+    margin-bottom: 20px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    & br
+      display: none
+    & img
+      position: initial !important
+  .brand--info__infogra .infogra--box.fourth.procent
+    padding-left: 0px
+  .brand--info__infogra .infogra--box.third.country,
+  .brand--info__infogra .infogra--box.fourth.procent
+    flex-direction: row-reverse
 @include media( 600 )
   .footer--form form:after
     right: -3%
@@ -216,6 +300,24 @@
     margin: 0 auto
   .reviews
     margin-bottom: 20px
+@include media( 500 )
+  .brand--banner__title
+    font-size: 40px
+    margin-bottom: 0px
+  .brand--banner__description
+    font-size: 14px
+    margin-bottom: 20px
+  .brand
+    margin-bottom: 40px
+  .brand--info__title
+    margin-bottom: 15px
+    display: initial
+    text-align: center
+  .brand--footer__content .brand--footer__text
+    font-size: 14px
+  .brand--footer__content .brand--footer__tite
+    font-size: 18px
+    margin-bottom: 10px
 @include media( 450 )
   .catalog--banner__content .banner--text
     padding-left: 70px
@@ -226,3 +328,5 @@
 @include media( 350 )
   .catalog--banner__content .banner--text .banner--title
     font-size: 12px
+  .brand--footer__banner .brand--banner__link:after
+    display: none
