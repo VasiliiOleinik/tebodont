@@ -214,3 +214,88 @@ select, input, textarea
     transition: all .2s linear
     background: #000000
     color: #ffffff
+
+.fancybox-is-open .fancybox-bg
+  background: rgba(156, 156, 156, 0.3)
+  backdrop-filter: blur(15px)
+#add-comment
+  padding: 20px
+.add--commtent__modal
+  max-width: 670px
+  width: 100%
+  & .add--comment__title
+    font-family: $lato
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 134.6%
+    color: #000000
+    margin-bottom: 10px
+  & .rating
+    padding-bottom: 15px
+    border-bottom: 0.7px solid $gray
+    max-width: 60%
+    width: 100%
+    margin-bottom: 15px
+  & .add--comment__fields
+    & .download--img__image
+      width: 122px
+      height: 122px
+      background: #ECE8E8
+      border-radius: 50%
+      margin-left: 40px
+      overflow: hidden
+      position: absolute
+      right: 40px
+      top: 30px
+      & p
+        font-family: $lato
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 134.6%
+        text-align: center
+        color: #000000
+        & span
+          font-family: $lato
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 134.6%
+          text-align: center
+          color: #5B5B5B
+      & img
+        object-fit: cover
+    & .add--comment__text
+      width: 100% !important
+      margin-top: 10px
+      resize: none
+      max-height: 50px
+      border-bottom: 0.7px solid $gray
+      font-family: $lato
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 134.6%
+      color: #9C9C9C
+      padding: 10px 0px
+    & .add--comment__input
+      width: 70%
+      padding: 10px 0px
+      border-bottom: 0.7px solid $gray
+      font-family: $lato
+      font-style: normal
+      font-weight: normal
+      font-size: 16px
+      line-height: 134.6%
+      color: #9C9C9C
+    & .download--img__input
+      width: 0.1px
+      height: 0.1px
+      opacity: 0
+      overflow: hidden
+      position: absolute
+      z-index: -1
+    & .link--btn
+      margin-left: auto
+      margin-top: 20px

@@ -177,6 +177,10 @@ $(function() {
     $('.product--adaptive--box-js').append($('.product--tabs'));
     $('.product--adaptive--box-js').append($('.product--box__body .link--btn'));
   }
+  // Download img
+  $("#user-photo").change(function(){
+    readURL(this);
+  });
 });
 
 function totalSUmm() {
@@ -185,5 +189,16 @@ function totalSUmm() {
   var sale = $('.cart--footer__sale .cart--footer__summ').text();
   for (var i = 0; i < text.length; i++) {
     $('.cart--footer__pay .cart--footer__summ').text((sum += Number(text[i].innerHTML)) - Number(sale));
+  }
+}
+
+function readURL(input) {
+  if (input.files && input.files[0]) {
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      $('.download--img__image p').hide();
+      $('.download--img__image img').attr('src', e.target.result);
+    };
+    reader.readAsDataURL(input.files[0]);
   }
 }
