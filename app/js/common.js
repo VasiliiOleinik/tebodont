@@ -1,15 +1,17 @@
 $(function() {
   // Cart product counter
+  var totalText = $(".cart--footer__count");
+  var chk = $('.cart--body').find('input[type=checkbox]:checked').length;
+  totalText.text(chk);
   $(".cart--item__checbox input").on("change", function() {
-    var totalText = $(".cart--footer__count").text();
-    if ($(this).prop("checked") == true) {
-      $(".cart--footer__count").text(Number.parseInt(totalText) + 1);
-    } else if ($(this).prop("checked") == false) {
-      $(".cart--footer__count").text(Number.parseInt(totalText) - 1);
-    }
+    var chk = $('.cart--body').find('input[type=checkbox]:checked').length;
+    totalText.text(chk);
   });
+  totalSUmm();
   // Remove products
   $(".item--btn.minus").on("click", function() {
+    var price = $(this).parent().siblings('.cart--item__price').find('.price--value').text();
+    var total = $(this).parent().siblings('.cart--item__total').find('.price--value');
     var inpVal = $(this)
       .siblings(".item--input")
       .val();
@@ -22,15 +24,21 @@ $(function() {
         .siblings(".item--input")
         .val(--inpVal);
     }
+    total.text(price * inpVal);
+    totalSUmm();
   });
   // Add products
   $(".item--btn.plus").on("click", function() {
+    var price = $(this).parent().siblings('.cart--item__price').find('.price--value').text();
+    var total = $(this).parent().siblings('.cart--item__total').find('.price--value');
     var inpVal = $(this)
       .siblings(".item--input")
       .val();
     $(this)
       .siblings(".item--input")
       .val(++inpVal);
+      total.text(price * inpVal);
+      totalSUmm();
   });
 
   // Change currency
@@ -69,11 +77,7 @@ $(function() {
         .find(".additionalInput")
         .slideDown();
     } else {
-      $(this)
-        .parent()
-        .parent()
-        .find(".additionalInput")
-        .slideDown();
+      $(".additionalInput").slideUp();
     }
   });
 
@@ -174,3 +178,12 @@ $(function() {
     $('.product--adaptive--box-js').append($('.product--box__body .link--btn'));
   }
 });
+
+function totalSUmm() {
+  var text = $('.cart--body').find('input[type=checkbox]:checked').parent().parent().find('.cart--item__total .price--value');
+  var sum = 0;
+  var sale = $('.cart--footer__sale .cart--footer__summ').text();
+  for (var i = 0; i < text.length; i++) {
+    $('.cart--footer__pay .cart--footer__summ').text((sum += Number(text[i].innerHTML)) - Number(sale));
+  }
+}
