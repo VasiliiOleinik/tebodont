@@ -228,7 +228,6 @@ select, input, textarea {
     font-size: 14px;
     line-height: 168.2%;
     letter-spacing: 0.03em;
-    text-transform: capitalize;
     color: #9C9C9C; }
 
 .pagetitle {
@@ -705,7 +704,16 @@ select, input, textarea {
       font-size: 16px;
       line-height: 19px;
       text-transform: uppercase;
-      color: #5B5B5B; }
+      color: #5B5B5B;
+      -webkit-transition: all .2s linear;
+      -o-transition: all .2s linear;
+      transition: all .2s linear;
+      border-bottom: 1px solid transparent; }
+      .header__menu .menu--item:hover {
+        border-bottom: 1px solid #5B5B5B;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
   .header__management {
     margin-left: auto; }
     .header__management .header--currency {
@@ -1042,7 +1050,6 @@ select, input, textarea {
     font-weight: 300;
     font-size: 20px;
     line-height: 134.6%;
-    text-transform: capitalize;
     color: #000000; }
     .contacts--section .contacts--item img {
       margin-right: 20px; }
@@ -1700,7 +1707,7 @@ select, input, textarea {
         transition: all .2s linear; }
 
 .product {
-  margin-bottom: 120px; }
+  margin-bottom: 32px; }
   .product--box {
     position: relative; }
     .product--box:first-of-type {
@@ -1745,7 +1752,7 @@ select, input, textarea {
     .product--box__body .product--param {
       width: 100%; }
       .product--box__body .product--param__name {
-        font-family: "Alegreya Sans SC", sans-serif;
+        font-family: "Lato", sans-serif;
         font-style: normal;
         font-weight: 600;
         font-size: 18px;
@@ -1754,7 +1761,7 @@ select, input, textarea {
         color: #000000;
         margin-right: 10px; }
       .product--box__body .product--param__value {
-        font-family: "Alegreya Sans SC", sans-serif;
+        font-family: "Lato", sans-serif;
         font-style: normal;
         font-weight: 300;
         font-size: 16px;
