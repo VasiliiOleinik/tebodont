@@ -295,7 +295,7 @@ select, input, textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #000000;
-  padding: 13px 39px;
+  padding: 10px 25px;
   border: 1px solid #242424;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -371,7 +371,7 @@ select, input, textarea {
     width: 100% !important;
     margin-top: 10px;
     resize: none;
-    max-height: 50px;
+    height: 100px;
     border-bottom: 0.7px solid #E5E5E5;
     font-family: "Lato", sans-serif;
     font-style: normal;
@@ -400,6 +400,111 @@ select, input, textarea {
   .add--commtent__modal .add--comment__fields .link--btn {
     margin-left: auto;
     margin-top: 20px; }
+
+#add-toCart {
+  padding: 20px; }
+
+.add--toCart__modal {
+  max-width: 785px;
+  width: 100%; }
+  .add--toCart__modal .product--item {
+    padding: 10px 0px;
+    border-bottom: 0.7px solid #C4C4C4; }
+    .add--toCart__modal .product--item__img {
+      width: 10%; }
+      .add--toCart__modal .product--item__img img {
+        max-width: 25px;
+        -o-object-fit: cover;
+           object-fit: cover; }
+    .add--toCart__modal .product--item__name {
+      width: 40%; }
+      .add--toCart__modal .product--item__name .selected--prod__name {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 134.6%;
+        color: #000000;
+        margin-bottom: 5px; }
+      .add--toCart__modal .product--item__name .selected--prod__text {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 134.6%;
+        color: #9C9C9C; }
+    .add--toCart__modal .product--item__remove {
+      width: 10%; }
+    .add--toCart__modal .product--item__counter {
+      width: 20%;
+      padding: 0px 5px; }
+      .add--toCart__modal .product--item__counter .item--btn {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 0;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0; }
+      .add--toCart__modal .product--item__counter .item--input {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        vertical-align: middle;
+        line-height: 0;
+        -webkit-flex-shrink: 0;
+            -ms-flex-negative: 0;
+                flex-shrink: 0;
+        border: 1px solid #C4C4C4;
+        -webkit-box-sizing: border-box;
+                box-sizing: border-box; }
+    .add--toCart__modal .product--item__price {
+      width: 20%;
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 134.6%;
+      text-align: center;
+      color: #000000; }
+  .add--toCart__modal .add--toCart__footer {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    .add--toCart__modal .add--toCart__footer .productsInCart__sale {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 168.2%;
+      letter-spacing: 0.03em;
+      color: #9C9C9C; }
+      .add--toCart__modal .add--toCart__footer .productsInCart__sale .cart--footer__text {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 168.2%;
+        letter-spacing: 0.03em;
+        color: #9C9C9C;
+        margin-right: 15px; }
+    .add--toCart__modal .add--toCart__footer .productsInCart__pay {
+      font-family: "Lato", sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 168.2%;
+      letter-spacing: 0.03em;
+      color: #000000; }
+      .add--toCart__modal .add--toCart__footer .productsInCart__pay .cart--footer__text {
+        font-family: "Lato", sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 168.2%;
+        letter-spacing: 0.03em;
+        color: #000000;
+        margin-right: 15px; }
 
 .footer--form {
   margin-bottom: 100px; }

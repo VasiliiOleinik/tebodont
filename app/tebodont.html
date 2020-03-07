@@ -394,6 +394,35 @@
         </div>
       </form>
     </div>
+    <div style="display: none;" id="add-toCart">
+      <form class="add--toCart__modal d-flex col">
+        <div class="add--toCart__body d-flex w-100 col">
+          <div class="product--item d-flex w-100 ai-center">
+            <div class="product--item__img d-flex ai-center justify-center"><img src="" alt=""></div>
+            <div class="product--item__name d-flex col ai-start justify-start"><span class="selected--prod__name"></span><span class="selected--prod__text"></span></div>
+            <div class="product--item__counter d-flex ai-center justify-center">
+              <button class="item--btn minus" type="button"><img src="img/minus.png" alt="Minus"></button>
+              <input class="item--input" type="text" value="1">
+              <button class="item--btn plus" type="button"><img src="img/plus.png" alt="Plus"></button>
+            </div>
+            <div class="product--item__price d-flex ai-center justify-center"><span class="price--value"></span><span class="price--currency"></span></div>
+            <button class="item--remove"><img src="img/remove.png" alt=""></button>
+          </div>
+        </div>
+        <div class="add--toCart__footer d-flex ai-start space-between">
+          <div class="productsInCart">
+            <p>Выбрано товаров:<span class="cart--footer__count">0</span></p>
+          </div>
+          <div class="productsInCart__info d-flex col">
+            <div class="productsInCart__sale d-flex ai-center"><span class="cart--footer__text">Скидка: </span><span class="cart--footer__summ">4</span><span class="cart--footer__currency">$</span></div>
+            <div class="productsInCart__pay d-flex ai-center"><span class="cart--footer__text">К оплате: </span><span class="cart--footer__summ"> </span><span class="cart--footer__currency">$</span></div>
+          </div>
+        </div>
+        <div class="add--toCart__btns">
+          <div class="d-flex ai-center space-between"><a class="link--btn" href="/catalog.html">вернуться к покупкам</a><a class="link--btn active" href="cart-final.html">оформить</a></div>
+        </div>
+      </form>
+    </div>
     <script src="js/libs.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>

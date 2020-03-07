@@ -181,6 +181,31 @@ $(function() {
   $("#user-photo").change(function(){
     readURL(this);
   });
+
+  // Add to cart modal
+  $('.add-toCart--js').on('click', function() {
+    var prodName = $(this).siblings('.catalog--product__name').text();
+    var prodPrice = $(this).siblings('.catalog--product__price').find('.price--value').text();
+    var prodCurrency = $(this).siblings('.catalog--product__price').find('.price--currency').text();
+    var prodImg = $(this).parent().siblings('.catalog--product__img').find('img').attr('src');
+    $('#add-toCart').find('.product--item__img img').attr('src', prodImg);
+    $('#add-toCart').find('.selected--prod__name').text(prodName);
+    $('#add-toCart').find('.price--value').text(prodPrice);
+    $('#add-toCart').find('.price--currency').text(prodCurrency);
+    $('#add-toCart').each(function(index, item) {
+      var howMutchProd = $(item).find('.product--item').length;
+      var totalSumm = $('#add-toCart').find('.productsInCart__pay  .cart--footer__summ');
+      var sale = $('#add-toCart').find('.productsInCart__sale  .cart--footer__summ').text();
+      $('#add-toCart').find(' .cart--footer__count').text(howMutchProd);
+      totalSumm.text(prodPrice - Number.parseInt(sale));
+
+      $('#add-toCart .item--btn.minus, #add-toCart .item--btn.plus').on('click', function() {
+        var count = $(item).find('.item--input').val();
+          $(item).find('.price--value').text(count * prodPrice);
+          totalSumm.text(((count * prodPrice) - Number(sale)));
+      });
+    });
+  });
 });
 
 function totalSUmm() {

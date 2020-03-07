@@ -45,6 +45,43 @@ html(lang="ru")
               img(src="", alt="")
           textarea(name="comment--text" class="add--comment__text" placeholder="Ваш комментарий")
           button(type="submit" class="link--btn") Опубликовать
+    div(style="display: none;" id="add-toCart")
+      form.add--toCart__modal.d-flex.col
+        .add--toCart__body.d-flex.w-100.col
+          .product--item.d-flex.w-100.ai-center
+            .product--item__img.d-flex.ai-center.justify-center
+              img(src="", alt="")
+            .product--item__name.d-flex.col.ai-start.justify-start
+              span(class="selected--prod__name")
+              span(class="selected--prod__text")
+            .product--item__counter.d-flex.ai-center.justify-center
+              button(type="button" class="item--btn minus")
+                  img(src="img/minus.png", alt="Minus")
+              input(type="text" value="1" class="item--input")
+              button(type="button" class="item--btn plus")
+                img(src="img/plus.png", alt="Plus")
+            .product--item__price.d-flex.ai-center.justify-center
+              span(class="price--value")
+              span(class="price--currency")
+            button(class="item--remove")
+              img(src="img/remove.png", alt="")
+        .add--toCart__footer.d-flex.ai-start.space-between
+          .productsInCart
+            p Выбрано товаров:
+              span(class="cart--footer__count") 0
+          .productsInCart__info.d-flex.col
+            .productsInCart__sale.d-flex.ai-center
+              span(class="cart--footer__text") Скидка: 
+              span(class="cart--footer__summ") 4
+              span(class="cart--footer__currency") $
+            .productsInCart__pay.d-flex.ai-center
+              span(class="cart--footer__text") К оплате: 
+              span(class="cart--footer__summ") 
+              span(class="cart--footer__currency") $
+        .add--toCart__btns
+          .d-flex.ai-center.space-between
+            a(href="catalog.html" class="link--btn") вернуться к покупкам
+            a(href="cart-final.html" class="link--btn active") оформить
     script(src="js/libs.min.js")
     script(src="js/jquery-ui.min.js")
     script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
