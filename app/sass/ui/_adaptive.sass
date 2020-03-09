@@ -5,6 +5,15 @@
     padding-right: 0px
   .brand--info__infogra .infogra--right
     padding-left: 0px
+  .catalog--banner.emofluor .catalog--banner__big-img
+    top: 0
+  .brand--info__title
+    display: inline-block
+    text-align: center
+  .brand--info.emofluor .brand--info__infogra .infogra--box.second.procent
+    padding-left: 0px
+  .brand--info__infogra .infogra--box.second.procent.emofluor:before
+    left: -120px
 @include media( 1250 )
   .brand--info .box
     max-width: 70%
@@ -16,6 +25,10 @@
     font-size: 12px
   .footer__central .footer__menu
     display: none
+  .catalog--banner.emofluor .catalog--banner__big-img
+    left: -10%
+  .brand.emofluor .brand--banner
+    height: 350px
 @include media( 992 )
   .catalog--section__products .catalog--product
     width: 33.33%
@@ -51,6 +64,21 @@
   .catalog--section__title.product:before,
   .catalog--section__title.product:after
     width: 32%
+  .brand.emofluor .brand--banner
+    height: auto
+  .catalog--banner.emofluor .catalog--banner__big-img
+    top: 30%
+    left: 0
+  .brand--info.emofluor .brand--info__infogra .infogra--box.second.procent
+    padding-left: 60px
+  .brand--info__infogra .infogra--box.second.procent.emofluor:before
+    left: -55px
+  .brand--info.emofluor .infogra--box.first.tooth
+    padding-left: 60px
+  .brand--info.emofluor .brand--info__infogra .infogra--box.first.tooth img
+    left: -18%
+  .main
+    overflow: hidden
 @include media( 800 )
   .cart--content .cart--header
     font-size: 11px
@@ -274,6 +302,8 @@
   .product--box .prouct-card__next-slide,
   .product--box .prouct-card__prev-slide
     top: 200px
+  .catalog--banner.emofluor .banner--img img
+    max-width: 100%
 @include media( 700 )
   .brand--info__infogra .infogra--center
     display: none
@@ -308,6 +338,15 @@
   .brand--info__infogra .infogra--box.third.country,
   .brand--info__infogra .infogra--box.fourth.procent
     flex-direction: row-reverse
+  .brand--info__infogra .infogra--box.second.procent.emofluor:before,
+  .brand--info.emofluor .brand--info__infogra .infogra--box.first.tooth img,
+  .brand--info.emofluor .brand--info__infogra .infogra--box.fourth.procent img
+    left: initial
+    top: initial
+    position: initial
+  .brand--info.emofluor .infogra--box.first.tooth,
+  .brand--info.emofluor .brand--info__infogra .infogra--box.second.procent
+    padding-left: 0
 @include media( 600 )
   .footer--form form:after
     right: -3%
