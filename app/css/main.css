@@ -2082,6 +2082,60 @@ select, input, textarea {
 .brand--info.emofluor .brand--info__infogra .infogra--box.fourth.procent:after {
   bottom: 65px; }
 
+.brand--footer.emoform .brand--footer-par {
+  right: 13%;
+  top: 53%;
+  z-index: 99; }
+
+.footer--form.emoform form:after {
+  content: url("../img/emoform-title.png");
+  right: -7%;
+  top: 0%; }
+
+.catalog--banner.emoform .catalog--banner__content .banner--text {
+  padding-left: 77px;
+  padding-top: 35px; }
+
+.catalog--banner.emoform .banner--img-bg {
+  position: absolute;
+  right: -4px;
+  bottom: -7px;
+  width: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  max-height: 295px; }
+
+.brand--info.emoform .brand--info__infogra .infogra--box.first.tooth img {
+  top: -30%; }
+
+.brand--info.emoform .brand--info__infogra .infogra--box.second.procent {
+  padding-left: 70px; }
+
+.brand--info.emoform .brand--info__infogra .infogra--box.second.procent:after {
+  bottom: 20px; }
+
+.brand--info.emoform .brand--info__infogra .infogra--box.second.procent:before {
+  content: url("../img/set--tooth2.png");
+  opacity: 1; }
+
+.brand.emoform .brand--img {
+  left: 0;
+  top: 15%; }
+
+.brand.emoform .brand--prod-img {
+  top: -15%; }
+  .brand.emoform .brand--prod-img:after {
+    content: url("../img/emoform--main-img-bg.png");
+    position: absolute;
+    right: -40%;
+    bottom: -50px; }
+
+.main {
+  overflow: hidden; }
+
+.brand--info .brand--infogra__footer.emoform:after {
+  content: url(../img/emoform-title.png); }
+
 .product {
   margin-bottom: 32px; }
   .product--box {
@@ -2225,7 +2279,9 @@ select, input, textarea {
   .brand--info.emofluor .brand--info__infogra .infogra--box.second.procent {
     padding-left: 0px; }
   .brand--info__infogra .infogra--box.second.procent.emofluor:before {
-    left: -120px; } }
+    left: -120px; }
+  .brand--info.emoform .brand--info__infogra .infogra--box.second.procent:after {
+    bottom: -15px; } }
 
 @media (max-width: 1250px) {
   .brand--info .box {
@@ -2246,7 +2302,9 @@ select, input, textarea {
   .catalog--banner.emofluor .catalog--banner__big-img {
     left: -10%; }
   .brand.emofluor .brand--banner {
-    height: 350px; } }
+    height: 350px; }
+  .brand--footer.emoform .brand--footer-par {
+    right: 0; } }
 
 @media (max-width: 992px) {
   .catalog--section__products .catalog--product {
@@ -2301,7 +2359,7 @@ select, input, textarea {
   .catalog--section__title.product:after {
     width: 32%; }
   .brand.emofluor .brand--banner {
-    height: auto; }
+    height: autos; }
   .catalog--banner.emofluor .catalog--banner__big-img {
     top: 30%;
     left: 0; }
@@ -2314,7 +2372,11 @@ select, input, textarea {
   .brand--info.emofluor .brand--info__infogra .infogra--box.first.tooth img {
     left: -18%; }
   .main {
-    overflow: hidden; } }
+    overflow: hidden; }
+  .catalog--banner.emoform .catalog--banner__content .banner--text {
+    position: initial; }
+  .brand--footer.emoform .brand--footer-par {
+    display: none; } }
 
 @media (max-width: 800px) {
   .cart--content .cart--header {
@@ -2616,7 +2678,12 @@ select, input, textarea {
   .product--box .prouct-card__prev-slide {
     top: 200px; }
   .catalog--banner.emofluor .banner--img img {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .catalog--banner.emoform .catalog--banner__content .banner--text {
+    padding-left: 20px;
+    padding-top: 20px; }
+  .catalog--banner.emoform .banner--img-bg {
+    z-index: -1; } }
 
 @media (max-width: 700px) {
   .brand--info__infogra .infogra--center {
@@ -2680,12 +2747,14 @@ select, input, textarea {
             flex-direction: row-reverse; }
   .brand--info__infogra .infogra--box.second.procent.emofluor:before,
   .brand--info.emofluor .brand--info__infogra .infogra--box.first.tooth img,
-  .brand--info.emofluor .brand--info__infogra .infogra--box.fourth.procent img {
+  .brand--info.emofluor .brand--info__infogra .infogra--box.fourth.procent img,
+  .brand--info.emoform .brand--info__infogra .infogra--box.second.procent:before {
     left: initial;
     top: initial;
     position: initial; }
   .brand--info.emofluor .infogra--box.first.tooth,
-  .brand--info.emofluor .brand--info__infogra .infogra--box.second.procent {
+  .brand--info.emofluor .brand--info__infogra .infogra--box.second.procent,
+  .brand--info.emoform .brand--info__infogra .infogra--box.second.procent {
     padding-left: 0; } }
 
 @media (max-width: 600px) {
