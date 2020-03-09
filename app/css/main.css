@@ -964,6 +964,18 @@ select, input, textarea {
 .main--img {
   margin-bottom: 30px; }
 
+#waterwheel-carousel {
+  width: 900px;
+  height: 250px;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto; }
+
+#waterwheel-carousel img {
+  visibility: hidden;
+  cursor: pointer; }
+
 .partners {
   margin-bottom: 70px; }
   .partners .partner {
@@ -1118,6 +1130,18 @@ select, input, textarea {
 
 .main--img {
   margin-bottom: 30px; }
+
+#waterwheel-carousel {
+  width: 900px;
+  height: 250px;
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  margin: 0 auto; }
+
+#waterwheel-carousel img {
+  visibility: hidden;
+  cursor: pointer; }
 
 .cart--content .cart--header {
   width: 100%;
