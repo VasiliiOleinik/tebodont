@@ -65,6 +65,7 @@
       margin-bottom: 25px
       position: relative
       padding-left: 25px
+      transition: all .2s linear
       &:before
         content: ''
         width: 10px
@@ -73,9 +74,17 @@
         display: block
         position: absolute
         left: 0
-        top: 50%
-        transform: translateY(-50%)
+        top: 5px
         border-radius: 50%
+      &:hover span
+        border-bottom: 1px solid #000000
+        cursor: pointer
+      & span.active
+        border-bottom: 1px solid #000000
+        margin-bottom: 10px
+        display: inline-block
+      & .lifehucks--list__content
+        display: none
 .set
   margin-bottom: 80px
   &--title
@@ -136,12 +145,132 @@
   margin-bottom: 30px
 
 #waterwheel-carousel
-  width: 900px
-  height: 250px
+  width: 100%
+  height: 600px
   position: relative
   clear: both
   overflow: hidden
   margin: 0 auto
+  margin-bottom: 100px
 #waterwheel-carousel img
   visibility: hidden
   cursor: pointer
+  top: 0 !important
+#waterwheel-next
+  width: 0
+  height: 0
+  opacity: 0
+  overflow: hidden
+.main--carousel--info
+  display: none
+#main--tebodon
+  display: block
+.main--carousel__brands
+  width: 100%
+  height: 550px
+  position: absolute
+  left: 50%
+  top: 0
+  transform: translateX(-50%)
+  z-index: 100
+  & .brand--container
+    max-width: 1080px
+    width: 100%
+    margin: 0 auto
+.carousel--info-box
+  position: relative
+  & span
+    font-family: $lato
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 134.6%
+    color: #000000
+  &.first
+    & img
+      position: absolute
+      left: -80px
+      top: -15px
+  &.second
+    & img
+      position: absolute
+      left: -100px
+  &.third
+    & img
+      position: absolute
+      right: 30px
+      top: -85px
+#main--emoform
+  & .carousel--info-box
+    &.first
+      & img
+        left: -130px
+        top: -50px
+    &.second
+      & img
+        left: -55px
+    &.third
+      & img
+        right: 50%
+        top: -20px
+#main--emofluor
+  & .carousel--info-box
+    &.first
+      & img
+        left: -130px
+        top: -25px
+    &.second
+      & img
+        left: -125px
+        top: -85px
+    &.third
+      & img
+        right: 10%
+        top: -140px
+.about--brand
+  max-width: 400px
+  position: absolute
+  left: 50%
+  top: 100%
+  transform: translateX(-50%)
+  justify-content: center
+  align-items: center
+  display: flex
+  flex-direction: column
+  &__title
+    font-family: $lato
+    font-style: normal
+    font-weight: 500
+    font-size: 20px
+    line-height: 196.6%
+    text-align: center
+    text-transform: uppercase
+    color: #000000
+  &__subtitle
+    font-family: Lato
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 196.6%
+    text-align: center
+    text-transform: uppercase
+    color: #000000
+    margin-bottom: 20px
+.brand-paralax
+  width: 100%
+  position: absolute
+  top: 0
+  left: 0
+  z-index: -1
+  display: flex
+  align-items: center
+  justify-content: center
+  opacity: 0
+  height: 800px
+  & img
+    position: relative
+.rotate--img
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  top: 60%

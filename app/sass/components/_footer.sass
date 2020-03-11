@@ -55,7 +55,7 @@
   background: rgba(0, 0, 0, 0.07)
   padding: 25px 0px
   &__contacts
-    width: 25%
+    width: 29%
     & img
       margin-right: 15px
     & .footer--text
@@ -70,7 +70,7 @@
       text-transform: capitalize
       color: #000000
   &__central
-    width: 50%
+    width: 45%
     & .footer--logo
       margin-bottom: 10px
     & .footer--name
@@ -91,6 +91,7 @@
       text-transform: uppercase
       color: #242424
       margin-right: 30px
+      position: relative
       &__active
         cursor: pointer
         position: relative
@@ -100,8 +101,19 @@
           right: -20px
           top: 50%
           transform: translateY(-50%)
-      &_list
+      & .footer--currency_list
         display: none
+        position: absolute
+        left: 0
+        bottom: calc(100% + 10px)
+        background: #FFFFFF
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        padding: 9px 8px
+        z-index: 999999
+        & li:not(:last-of-type)
+          margin-bottom: 8px
+        & li:hover
+          color: #000000
     & .footer--lang
       font-family: $lato
       font-style: normal
@@ -110,6 +122,7 @@
       line-height: 19px
       text-transform: uppercase
       color: #242424
+      position: relative
       &__active
         cursor: pointer
         position: relative
@@ -119,8 +132,18 @@
           right: -20px
           top: 50%
           transform: translateY(-50%)
-      &_list
+      & .footer--lang_list
         display: none
+        position: absolute
+        left: 0
+        bottom: calc(100% + 10px)
+        background: #FFFFFF
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        padding: 9px 8px
+        z-index: 999999
+        & li:not(:last-of-type)
+          margin-bottom: 8px
+        & li:hover
     & .footer__menu
       margin-bottom: 20px
       & .menu--item
@@ -132,6 +155,11 @@
         text-transform: uppercase
         color: #242424
         margin: 0px 10px
+        transition: all .2s linear
+        border-bottom: 1px solid transparent
+        &:hover
+          border-bottom: 1px solid #5B5B5B
+          transition: all .2s linea
     & .footer--copyright
       font-family: $lato
       font-style: normal
@@ -169,3 +197,9 @@
       & img
         margin-right: 20px
         flex-shrink: 0
+.footer--copyright
+  & a
+    border-bottom: 1px solid transparent
+    transition: all .2s linear
+    &:hover
+      border-bottom: 1px solid #242424

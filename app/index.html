@@ -49,12 +49,53 @@
           </div>
         </header>
         <main class="main">
-          <div id="waterwheel-carousel">
-            <div class="char"><img src="https://bkosborne.com/sites/default/files/waterwheelcarousel/1.jpg"></div>
-            <div class="char"><img src="https://bkosborne.com/sites/default/files/waterwheelcarousel/2.jpg"></div>
-            <div class="char"><img src="https://bkosborne.com/sites/default/files/waterwheelcarousel/3.jpg"></div><a href="#" id="next">Next</a>
-          </div>
           <div class="box main--img d-flex ai-center justify-center"><img src="img/main--img.png" alt=""></div>
+          <div class="brand-paralax brand-1"><img class="js-parallax" src="img/leaf--par.png" alt="" data-size="10"></div>
+          <div class="brand-paralax brand-2"><img class="js-parallax" src="img/diamants-par.png" alt="" data-size="10"></div>
+          <div class="brand-paralax brand-3">
+            <canvas id="background"></canvas>
+          </div>
+          <div class="box">
+            <div id="waterwheel-carousel"><img src="img/tebobont-info-past.png" alt=""><img src="img/emoform-info-past.png" alt=""><img src="img/emofluor-info-past.png" alt=""></div><a href="#" id="waterwheel-next">Next</a>
+            <div class="main--carousel__brands"><img class="rotate--img" src="img/rotate.png" alt="">
+              <div class="main--carousel--info brand-1 w-100 h-100" id="main--tebodont">
+                <div class="brand--container d-flex space-between h-60 w-100">
+                  <div class="col-25 d-flex space-between col h-100">
+                    <div class="carousel--info-box first"><img src="img/oil.png" alt=""><span>Содержит масло<br> чайного дерева</span></div>
+                    <div class="carousel--info-box second"><img src="img/green.png" alt=""><span>Предотвращает кариес,<br> гингивит, пародонтит и другие<br> заболевания полости рта</span></div>
+                  </div>
+                  <div class="col-25 d-flex justify-center col h-100">
+                    <div class="carousel--info-box third"><img src="img/set--tooth1.png" alt=""><span>Оказывает<br>успокаивающее<br> и противоваспалительное действие</span></div>
+                  </div>
+                </div>
+                <div class="about--brand"><span class="about--brand__title">tebodont</span><span class="about--brand__subtitle">Зубная паста здорового человека!</span><a class="link--btn" href="/tebodont.html">Подробнее</a></div>
+              </div>
+              <div class="main--carousel--info brand-2 w-100 h-100" id="main--emoform">
+                <div class="brand--container d-flex space-between h-60 w-100">
+                  <div class="col-25 d-flex space-between col h-100">
+                    <div class="carousel--info-box first"><img src="img/set--tooth2.png" alt=""><span>Мягко очищает и полирует<br> поверхность зубов</span></div>
+                    <div class="carousel--info-box second"><img src="img/stone.png" alt=""><span>Препятствует образованию<br>зубного камня</span></div>
+                  </div>
+                  <div class="col-25 d-flex justify-center col h-100">
+                    <div class="carousel--info-box third"><img src="img/blue-diamant.png" alt=""><span>Содержит<br> мельчайшие частицы<br> настоящего диаманта</span></div>
+                  </div>
+                </div>
+                <div class="about--brand"><span class="about--brand__title">emoform</span><span class="about--brand__subtitle">Зубная паста здорового человека!</span><a class="link--btn" href="/emoform.html">Подробнее</a></div>
+              </div>
+              <div class="main--carousel--info brand-3 w-100 h-100" id="main--emofluor">
+                <div class="brand--container d-flex space-between h-60 w-100">
+                  <div class="col-25 d-flex space-between col h-100">
+                    <div class="carousel--info-box first"><img src="img/emof1.png" alt=""><span>снижает повышенную<br> чувствительность зубов, <br>запечатывая дентинные канальцы</span></div>
+                    <div class="carousel--info-box second"><img src="img/swisstechnology.png" alt=""><span>Удостоенно награды Swiss<br> Technology® Award</span></div>
+                  </div>
+                  <div class="col-25 d-flex justify-center col h-100">
+                    <div class="carousel--info-box third"><img src="img/unique.png" alt=""><span>Содержит уникальную комбинацию<br> высокоэффективного минерала<br> фторида олова и технологию<br> CUROLOX®</span></div>
+                  </div>
+                </div>
+                <div class="about--brand"><span class="about--brand__title">emofluor</span><span class="about--brand__subtitle">Зубная паста здорового человека!</span><a class="link--btn" href="/emofluor.html">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
           <div class="box set d-flex col w-100">
             <div class="set--title"><span>комплексный швейцарский набор</span></div>
             <div class="set--content col d-flex ai-center col">
@@ -69,13 +110,27 @@
           <div class="box lifehucks d-flex col w-100">
             <div class="lifehucks--title"><span>лайфхаки</span></div>
             <ul class="lifehucks--list">
-              <li class="lifehucks--list__item">как правильно чистить зубы?</li>
-              <li class="lifehucks--list__item">чем полоскать и зачем?</li>
-              <li class="lifehucks--list__item">зубная нить или зубочистка?</li>
-              <li class="lifehucks--list__item">жевательная резинка: правда или фейк?</li>
-              <li class="lifehucks--list__item">топ5 мифов</li>
-              <li class="lifehucks--list__item">кровоточивость дёсен: что делать?</li>
-              <li class="lifehucks--list__item">повышенная чувствительность: терпеть нельзя лечить</li>
+              <li class="lifehucks--list__item"><span>как правильно чистить зубы?</span>
+                <div class="lifehucks--list__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quaerat ipsa, asperiores vitae autem, consequatur obcaecati eveniet, modi officia cumque magni dolore odit laborum molestias? Rem necessitatibus temporibus laboriosam vitae!</div>
+              </li>
+              <li class="lifehucks--list__item"><span>чем полоскать и зачем?</span>
+                <div class="lifehucks--list__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>зубная нить или зубочистка?</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>жевательная резинка: правда или фейк?</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>топ5 мифов</span>
+                <div class="lifehucks--list__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>кровоточивость дёсен: что делать?</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>повышенная чувствительность: терпеть нельзя лечить</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
             </ul>
           </div>
           <div class="box reviews d-flex col w-100">
@@ -269,7 +324,8 @@
                       <li class="footer--lang_item"><a href="/">EN</a></li>
                     </ul>
                   </div>
-                </nav><span class="footer--copyright">Copyright © 2020 Дизайн: FoxDesign</span>
+                </nav>
+                <p class="footer--copyright">Copyright © 2020 Дизайн:<a href="https://www.behance.net/FoxDesign7">FoxDesign</a></p>
               </div>
               <div class="footer__right d-flex col">
                 <div class="footer__right--mail d-flex ai-center"><img src="img/mail.svg" alt="Mail"><span class="footer--text">info@swisstrade.com.ua</span></div>
@@ -329,7 +385,7 @@
         </div>
         <div class="add--toCart__footer d-flex ai-start space-between">
           <div class="productsInCart">
-            <p>Выбрано товаров:<span class="cart--footer__count">0</span></p>
+            <p>Товаров в корзине:<span class="cart--footer__count">0</span></p>
           </div>
           <div class="productsInCart__info d-flex col">
             <div class="productsInCart__sale d-flex ai-center"><span class="cart--footer__text">Скидка: </span><span class="cart--footer__summ">4</span><span class="cart--footer__currency">$</span></div>
@@ -347,6 +403,7 @@
     <script src="js/paralax.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://bkosborne.com/sites/all/themes/bootstrap_brian/js/jquery.waterwheelCarousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

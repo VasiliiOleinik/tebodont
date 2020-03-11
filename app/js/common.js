@@ -1,7 +1,7 @@
 $(function() {
   // Main 3D slider
   var carousel = $("#waterwheel-carousel").waterwheelCarousel({
-    horizon: 110,
+    horizon: 1500,
     horizonOffset: 0,
     horizonOffsetMultiplier: .7,
     activeClassName: "active",
@@ -9,17 +9,38 @@ $(function() {
     flankingItems: 1,
     keyboardNav: true,
     edgeFadeEnabled: true,
-    speed: 1000,
+    speed: 1500,
     animationEasing: 'linear',
-    quickerForFurther: true
+    quickerForFurther: true,
+    carouselRotationsLeft: 1000,
   });
+  var counter = 1;
+  $('.main--carousel--info').first().fadeIn();
+  $('.brand-paralax').first().css({'opacity':1, 'transition': 'all 1.5s linear'});
   setInterval(function() {
-    $('#next').click();
+    $('#waterwheel-next').click();
   }, 5000);
-  $('#next').bind('click', function () {
+
+  $('#waterwheel-next').bind('click', function () {
     carousel.next();
+    if(counter === 3) {
+      counter = 1;
+    } else {
+      counter++;
+    }
+    $('.main--carousel--info').fadeOut(500);
+    $('.brand-paralax').css({'opacity':0, 'transition': 'all .5s linear'});
+    $('.main--carousel--info.brand-' + counter).fadeIn(1500);
+    $('.brand-paralax.brand-' + counter).css({'opacity':1, 'transition': 'all 1.5s linear'});
     return false;
   });
+
+    // var particles = Particles.init({
+    //   selector: '#background',
+    //   connectParticles: true,
+    //   maxParticles: 150,
+    //   color: ['#9C9C9C'],
+    // });
 
   // Cart product counter
   var totalText = $(".cart--footer__count");
@@ -90,6 +111,19 @@ $(function() {
         .text()
     );
   });
+  $(".footer--currency__active").on("click", function() {
+    console.log('true');
+    $(this)
+      .siblings(".footer--currency_list")
+      .slideToggle();
+  });
+  $(".footer--currency_list li").on("click", function() {
+    $(".footer--currency__active").text(
+      $(this)
+        .find("a")
+        .text()
+    );
+  });
   // Change lang
   $(".header--lang__active").on("click", function() {
     $(this)
@@ -98,6 +132,18 @@ $(function() {
   });
   $(".header--lang_list li").on("click", function() {
     $(".header--lang__active").text(
+      $(this)
+        .find("a")
+        .text()
+    );
+  });
+  $(".footer--lang__active").on("click", function() {
+    $(this)
+      .siblings(".footer--lang_list")
+      .slideToggle();
+  });
+  $(".footer--lang_list li").on("click", function() {
+    $(".footer--lang__active").text(
       $(this)
         .find("a")
         .text()
@@ -226,6 +272,12 @@ $(function() {
       .siblings(".product--tab__body")
       .slideToggle();
   });
+  $(".lifehucks--list__item span").on("click", function() {
+    $(this).toggleClass("active");
+    $(this)
+      .siblings(".lifehucks--list__content")
+      .slideToggle();
+  });
 
   // Adaptive
   if (screen.width < 768) {
@@ -303,6 +355,12 @@ $(function() {
       );
     });
   });
+
+  if (screen.width < 992) {
+    $('#waterwheel-carousel').remove();
+    $('.brand-paralax').remove();
+    $('.main--carousel__brands').remove();
+  }
 });
 
 function totalSUmm() {

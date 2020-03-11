@@ -1,16 +1,73 @@
 extends blocks/_layout
 append content
   main.main
-    #waterwheel-carousel
-      .char
-        img(src="https://bkosborne.com/sites/default/files/waterwheelcarousel/1.jpg")
-      .char
-        img(src="https://bkosborne.com/sites/default/files/waterwheelcarousel/2.jpg")
-      .char
-        img(src="https://bkosborne.com/sites/default/files/waterwheelcarousel/3.jpg")
-      a(href="#" id="next") Next
     .box.main--img.d-flex.ai-center.justify-center
       img(src="img/main--img.png", alt="")
+    .brand-paralax.brand-1
+      img(src="img/leaf--par.png", alt="" class="js-parallax", data-size="10")
+    .brand-paralax.brand-2
+      img(src="img/diamants-par.png", alt="" class="js-parallax", data-size="10")
+    .brand-paralax.brand-3
+      canvas(id="background")
+    .box
+      #waterwheel-carousel
+        img(src="img/tebobont-info-past.png", alt="")
+        img(src="img/emoform-info-past.png", alt="")
+        img(src="img/emofluor-info-past.png", alt="")
+      a(href="#" id="waterwheel-next") Next
+      .main--carousel__brands
+        img(src="img/rotate.png", alt="" class="rotate--img")
+        #main--tebodont.main--carousel--info.brand-1.w-100.h-100
+          .brand--container.d-flex.space-between.h-60.w-100
+            .col-25.d-flex.space-between.col.h-100
+              .carousel--info-box.first
+                img(src="img/oil.png", alt="")
+                span Содержит масло<br> чайного дерева
+              .carousel--info-box.second
+                img(src="img/green.png", alt="")
+                span Предотвращает кариес,<br> гингивит, пародонтит и другие<br> заболевания полости рта
+            .col-25.d-flex.justify-center.col.h-100
+              .carousel--info-box.third
+                img(src="img/set--tooth1.png", alt="")
+                span Оказывает<br>успокаивающее<br> и противоваспалительное действие
+          .about--brand
+            span(class="about--brand__title") tebodont
+            span(class="about--brand__subtitle") Зубная паста здорового человека!
+            a(href="/tebodont.html" class="link--btn") Подробнее
+        #main--emoform.main--carousel--info.brand-2.w-100.h-100
+          .brand--container.d-flex.space-between.h-60.w-100
+            .col-25.d-flex.space-between.col.h-100
+              .carousel--info-box.first
+                img(src="img/set--tooth2.png", alt="")
+                span Мягко очищает и полирует<br> поверхность зубов
+              .carousel--info-box.second
+                img(src="img/stone.png", alt="")
+                span Препятствует образованию<br>зубного камня
+            .col-25.d-flex.justify-center.col.h-100
+              .carousel--info-box.third
+                img(src="img/blue-diamant.png", alt="")
+                span Содержит<br> мельчайшие частицы<br> настоящего диаманта
+          .about--brand
+            span(class="about--brand__title") emoform
+            span(class="about--brand__subtitle") Зубная паста здорового человека!
+            a(href="/emoform.html" class="link--btn") Подробнее
+        #main--emofluor.main--carousel--info.brand-3.w-100.h-100
+          .brand--container.d-flex.space-between.h-60.w-100
+            .col-25.d-flex.space-between.col.h-100
+              .carousel--info-box.first
+                img(src="img/emof1.png", alt="")
+                span снижает повышенную<br> чувствительность зубов, <br>запечатывая дентинные канальцы
+              .carousel--info-box.second
+                img(src="img/swisstechnology.png", alt="")
+                span Удостоенно награды Swiss<br> Technology® Award
+            .col-25.d-flex.justify-center.col.h-100
+              .carousel--info-box.third
+                img(src="img/unique.png", alt="")
+                span Содержит уникальную комбинацию<br> высокоэффективного минерала<br> фторида олова и технологию<br> CUROLOX®
+          .about--brand
+            span(class="about--brand__title") emofluor
+            span(class="about--brand__subtitle") Зубная паста здорового человека!
+            a(href="/emofluor.html" class="link--btn") Подробнее
     .box.set.d-flex.col.w-100
       .set--title
         span комплексный швейцарский набор
@@ -30,13 +87,27 @@ append content
       .lifehucks--title
         span лайфхаки
       ul.lifehucks--list
-        li(class="lifehucks--list__item") как правильно чистить зубы?
-        li(class="lifehucks--list__item") чем полоскать и зачем?
-        li(class="lifehucks--list__item") зубная нить или зубочистка?
-        li(class="lifehucks--list__item") жевательная резинка: правда или фейк?
-        li(class="lifehucks--list__item") топ5 мифов
-        li(class="lifehucks--list__item") кровоточивость дёсен: что делать?
-        li(class="lifehucks--list__item") повышенная чувствительность: терпеть нельзя лечить
+        li(class="lifehucks--list__item")
+          span как правильно чистить зубы?
+          div(class="lifehucks--list__content") Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quaerat ipsa, asperiores vitae autem, consequatur obcaecati eveniet, modi officia cumque magni dolore odit laborum molestias? Rem necessitatibus temporibus laboriosam vitae!
+        li(class="lifehucks--list__item")
+          span чем полоскать и зачем?
+          div(class="lifehucks--list__content") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?
+        li(class="lifehucks--list__item")
+          span зубная нить или зубочистка?
+          div(class="lifehucks--list__content")  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?
+        li(class="lifehucks--list__item")
+          span жевательная резинка: правда или фейк?
+          div(class="lifehucks--list__content")  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?
+        li(class="lifehucks--list__item")
+          span топ5 мифов
+          div(class="lifehucks--list__content") Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?
+        li(class="lifehucks--list__item")
+          span кровоточивость дёсен: что делать?
+          div(class="lifehucks--list__content")  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?
+        li(class="lifehucks--list__item")
+          span повышенная чувствительность: терпеть нельзя лечить
+          div(class="lifehucks--list__content")  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?
     .box.reviews.d-flex.col.w-100
       .reviews--title
         span отзывы покупателей

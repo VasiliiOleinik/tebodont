@@ -53,44 +53,44 @@ append content
           .catalog--section__products.d-flex.w-100.flex-wrap
             .catalog--product
               .catalog--product__content.d-flex.col.ai-center.justify-center
-                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
                 .catalog--product__img.d-flex.col.ai-center.justify-center
                   img(src="img/emoform1.png", alt="")
                 .catalog--info.d-flex.col.ai-center.justify-center
                   span(class="catalog--product__name") Зубная паста emoform diamond, 75 мл
-                  span(class="catalog--product__oldprice") 15$
-                  span(class="catalog--product__price") 13$
-                  a(class="link--btn" href="cart.html") В корзину
+                  p(class="catalog--product__price")
+                    span(class="price--value") 13
+                    span(class="price--currency") $
+                  a(class="link--btn add-toCart--js" href="javascript:void(0);" data-fancybox data-src="#add-toCart") В корзину
             .catalog--product
               .catalog--product__content.d-flex.col.ai-center.justify-center
-                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
                 .catalog--product__img.d-flex.col.ai-center.justify-center
                   img(src="img/emoform2.png", alt="")
                 .catalog--info.d-flex.col.ai-center.justify-center
                   span(class="catalog--product__name") Зубная паста emoform-f diamond, 85 мл
-                  span(class="catalog--product__oldprice") 15$
-                  span(class="catalog--product__price") 13$
-                  a(class="link--btn" href="cart.html") В корзину
+                  p(class="catalog--product__price")
+                    span(class="price--value") 13
+                    span(class="price--currency") $
+                  a(class="link--btn add-toCart--js" href="javascript:void(0);" data-fancybox data-src="#add-toCart") В корзину
             .catalog--product
               .catalog--product__content.d-flex.col.ai-center.justify-center
-                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
                 .catalog--product__img.d-flex.col.ai-center.justify-center
                   img(src="img/emoform3.png", alt="")
                 .catalog--info.d-flex.col.ai-center.justify-center
                   span(class="catalog--product__name") Зубная паста emoform-f diamond, 85 мл + зубная щетка
-                  span(class="catalog--product__oldprice") 15$
-                  span(class="catalog--product__price") 13$
-                  a(class="link--btn" href="cart.html") В корзину
+                  p(class="catalog--product__price")
+                    span(class="price--value") 13
+                    span(class="price--currency") $
+                  a(class="link--btn add-toCart--js" href="javascript:void(0);" data-fancybox data-src="#add-toCart") В корзину
             .catalog--product
               .catalog--product__content.d-flex.col.ai-center.justify-center
-                span(class="catalog--product__discount d-flex ai-center justify-center") 10%
                 .catalog--product__img.d-flex.col.ai-center.justify-center
                   img(src="img/emoform4.png", alt="")
                 .catalog--info.d-flex.col.ai-center.justify-center
                   span(class="catalog--product__name") Зубная паста emoform-f diamond, пробник 25 мл
-                  span(class="catalog--product__oldprice") 15$
-                  span(class="catalog--product__price") 13$
-                  a(class="link--btn" href="cart.html") В корзину
+                  p(class="catalog--product__price")
+                    span(class="price--value") 13
+                    span(class="price--currency") $
+                  a(class="link--btn add-toCart--js" href="javascript:void(0);" data-fancybox data-src="#add-toCart") В корзину
     .catalog--banner.w-100.emoform
       .box
         .catalog--banner__content.d-flex
@@ -208,7 +208,7 @@ append content
         img(src="img/btn-prev.png", alt="")
       button(class="slide-next" type="button")
         img(src="img/btn-next.png", alt="")
-      button(class="add-review" type="button") Добавить отзыв
+      button(class="add-review" type="button"  data-fancybox data-src="#add-comment") Добавить отзыв
     .brand--footer.emoform
       .brand--footer-par
         img(src="img/diamants.png", alt="" class="js-parallax", data-size="10")

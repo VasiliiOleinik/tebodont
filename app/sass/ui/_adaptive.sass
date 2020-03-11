@@ -16,6 +16,12 @@
     left: -120px
   .brand--info.emoform .brand--info__infogra .infogra--box.second.procent:after
     bottom: -15px
+  .brand--footer-par
+    z-index: 0
+@include media( 1400 )
+  .set--title:before,
+  .set--title:after
+    width: 23%
 @include media( 1250 )
   .brand--info .box
     max-width: 70%
@@ -33,6 +39,11 @@
     height: 350px
   .brand--footer.emoform .brand--footer-par
     right: 0
+  .main--carousel__brands .brand--container
+    max-width: 850px
+  .set--title:before,
+  .set--title:after
+    width: 20%
 @include media( 992 )
   .catalog--section__products .catalog--product
     width: 33.33%
@@ -87,6 +98,12 @@
     position: initial
   .brand--footer.emoform .brand--footer-par
     display: none
+  .set--title:before,
+  .set--title:after
+    display: none
+  .main--img
+    display: none
+
 @include media( 800 )
   .cart--content .cart--header
     font-size: 11px
@@ -317,6 +334,21 @@
     padding-top: 20px
   .catalog--banner.emoform .banner--img-bg
     z-index: -1
+  .set--content__elems
+    flex-direction: column
+  .lifehucks--title:before,
+  .lifehucks--title:after
+    display: none
+  .lifehucks--list
+    margin-left: 0px
+  .lifehucks--list__item
+    font-size: 12px
+  .set--title,
+  .set--content__title
+    text-align: center
+    font-size: 13px
+  .catalog--section__title span
+    font-size: 13px
 @include media( 700 )
   .brand--info__infogra .infogra--center
     display: none
