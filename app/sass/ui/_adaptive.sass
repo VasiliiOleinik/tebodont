@@ -22,6 +22,8 @@
   .set--title:before,
   .set--title:after
     width: 23%
+  .gifts--paral
+    left: -10%
 @include media( 1250 )
   .brand--info .box
     max-width: 70%
@@ -44,6 +46,8 @@
   .set--title:before,
   .set--title:after
     width: 20%
+  .gifts--paral
+    left: -15%
 @include media( 992 )
   .catalog--section__products .catalog--product
     width: 33.33%
@@ -103,13 +107,90 @@
     display: none
   .main--img
     display: none
-
+  .main--slider__mobile
+    display: block
+    margin-bottom: 30px
+    & .mobile--slider__item
+      position: relative
+    & .mobile--slider__title
+      text-align: center
+      font-family: $algeria
+      font-style: normal
+      font-weight: bold
+      font-size: 40px
+      line-height: 48px
+      text-transform: uppercase
+      color: #242424
+      width: 100%
+      display: inline-block
+      margin-bottom: 20px
+    & .mobile--slider__text
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 13px
+      line-height: 168.2%
+      text-align: center
+      letter-spacing: 0.03em
+      color: #000000
+      text-align: center
+      margin-bottom: 10px
+    & .mobile--slider__slogan
+      font-family: $lato
+      font-style: normal
+      font-weight: 300
+      font-size: 13px
+      line-height: 134.6%
+      color: #000000
+      text-align: center
+      & span
+        font-family: $lato
+        font-style: normal
+        font-weight: normal
+        font-size: 13px
+        line-height: 134.6%
+        color: #000000
+    & .mobile--slider__img
+      margin: 0 auto
+      max-width: 400px
+      width: 100%
+      max-height: 400px
+      object-fit: contain
+    & .mobile--slider__info
+      position: absolute
+      bottom: 5%
+      left: 0
+      & b
+        text-transform: uppercase
+  .main--mobile--link
+    margin: 0 auto
+    display: block
+    width: 100%
+    text-align: center
+    margin-bottom: 60px
+    margin-top: 20px
+  .slick-dots
+    left: 0
+  .gifts
+    flex-direction: column
+    padding: 0px
+  .gifts .left--gift
+    width: initial
+    height: initial
+    max-width: initial
+    max-height: initial
+  .gifts--paral
+    left: 0
+    bottom: 50%
+    transform: translateY(25%)
 @include media( 800 )
   .cart--content .cart--header
     font-size: 11px
   .reviews--title:after,
   .reviews--title:before
     width: 25%
+  .gifts--paral
+    left: -15%
 @include media( 768 )
   .breadcrumbs
     display: none
@@ -394,6 +475,8 @@
   .brand--info.emofluor .brand--info__infogra .infogra--box.second.procent,
   .brand--info.emoform .brand--info__infogra .infogra--box.second.procent
     padding-left: 0
+  .gifts--paral
+    left: -35%
 @include media( 600 )
   .footer--form form:after
     right: -3%
@@ -426,6 +509,14 @@
     margin: 0 auto
   .reviews
     margin-bottom: 20px
+  .gifts .left--gift,
+  .gifts .gift--box
+    max-width: 240px
+  .gifts--paral
+    left: 0
+    transform: translateY(40%)
+  .gifts--paral img
+    max-width: 310px
 @include media( 500 )
   .brand--banner__title
     font-size: 40px
