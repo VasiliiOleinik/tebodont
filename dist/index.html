@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="assets/img/favicon.ico" rel="shortcut icon">
+    <link type="text/css" href="css/libs.min.css" rel="stylesheet">
+    <link type="text/css" href="css/jquery-ui.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/lato.css">
+    <link href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700&amp;display=swap" rel="stylesheet">
+    <link type="text/css" href="css/revalator.css" rel="stylesheet">
+    <link type="text/css" href="css/main.css" rel="stylesheet">
+    <title>Tebodont</title>
+  </head>
+  <body>
+    <div class="content-wrapper" id="contentWrapper">
+      <div class="page-wrapper" id="pageWrapper">
+        <div class="mobile--navigation">
+          <ul class="mobile--navigation__list d-flex col">
+            <li class="mobile--navigation__elem"><a href="/catalog.html">каталог</a></li>
+            <li class="mobile--navigation__elem"><a href="/tebodont.html">Tebodont</a></li>
+            <li class="mobile--navigation__elem"><a href="/emoform.html">Emoform</a></li>
+            <li class="mobile--navigation__elem"><a href="/emofluor.html">Emofluor</a></li>
+            <li class="mobile--navigation__elem"><a href="/delivery.html">доставка</a></li>
+            <li class="mobile--navigation__elem"><a href="/contacts.html">контакты</a></li>
+          </ul>
+        </div>
+        <header class="header">
+          <div class="box h-100 ai-center">
+            <div class="header__body d-flex ai-center w-100">
+              <button class="hamburger hamburger--spring" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+              <div class="header__logo"><a href=""><img src="img/logo.svg" alt="Logo"></a></div>
+              <nav class="header__menu">
+                <ul class="header__menu-list d-flex">
+                  <li class="menu--item"><a href="/catalog.html">каталог</a></li>
+                  <li class="menu--item"><a href="/tebodont.html">Tebodont</a></li>
+                  <li class="menu--item"><a href="/emoform.html">Emoform</a></li>
+                  <li class="menu--item"><a href="/emofluor.html">Emofluor</a></li>
+                  <li class="menu--item"><a href="/delivery.html">доставка</a></li>
+                  <li class="menu--item"><a href="/contacts.html">контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header__management d-flex ai-center">
+                <div class="header--currency"><span class="header--currency__active">USD</span>
+                  <ul class="header--currency_list">
+                    <li class="header--currency_item"><a href="/">USD</a></li>
+                    <li class="header--currency_item"><a href="/">EUR</a></li>
+                    <li class="header--currency_item"><a href="/">UAH</a></li>
+                  </ul>
+                </div>
+                <div class="header--lang"><span class="header--lang__active">RU</span>
+                  <ul class="header--lang_list">
+                    <li class="header--lang_item"><a href="/">RU</a></li>
+                    <li class="header--lang_item"><a href="/">UA</a></li>
+                    <li class="header--lang_item"><a href="/">EN</a></li>
+                  </ul>
+                </div><a class="header--cart" href="cart.html"><img src="img/cart.svg" alt="Cart ico"><span class="header--cart_counter d-flex ai-center justify-center"></span></a>
+              </div>
+            </div>
+          </div>
+        </header>
+        <main class="main">
+          <div class="box main--img d-flex ai-center justify-center"><img src="img/main--img.png" alt=""></div>
+          <div class="brand-paralax brand-1"><img src="img/leaf--par.png" alt=""></div>
+          <div class="brand-paralax brand-2"><img src="img/diamants-par.png" alt=""></div>
+          <div class="brand-paralax brand-3"></div>
+          <div class="box">
+            <div id="waterwheel-carousel"><img src="img/tebobont-info-past.png" alt=""><img src="img/emoform-info-past.png" alt=""><img src="img/emofluor-info-past.png" alt=""></div><a href="#" id="waterwheel-next">Next</a>
+            <div class="main--carousel__brands"><img class="rotate--img" src="img/rotate.png" alt="">
+              <div class="main--carousel--info brand-1 w-100 h-100" id="main--tebodont">
+                <div class="brand--container d-flex space-between h-60 w-100">
+                  <div class="col-25 d-flex space-between col h-100">
+                    <div class="carousel--info-box first"><img src="img/oil.png" alt=""><span>Содержит масло<br> чайного дерева</span></div>
+                    <div class="carousel--info-box second"><img src="img/green.png" alt=""><span>Предотвращает кариес,<br> гингивит, пародонтит и другие<br> заболевания полости рта</span></div>
+                  </div>
+                  <div class="col-25 d-flex justify-center col h-100">
+                    <div class="carousel--info-box third"><img src="img/set--tooth1.png" alt=""><span>Оказывает<br>успокаивающее<br> и противоваспалительное действие</span></div>
+                  </div>
+                </div>
+                <div class="about--brand"><span class="about--brand__title">tebodont</span><span class="about--brand__subtitle">Зубная паста здорового человека!</span><a class="link--btn" href="/tebodont.html">Подробнее</a></div>
+              </div>
+              <div class="main--carousel--info brand-2 w-100 h-100" id="main--emoform">
+                <div class="brand--container d-flex space-between h-60 w-100">
+                  <div class="col-25 d-flex space-between col h-100">
+                    <div class="carousel--info-box first"><img src="img/set--tooth2.png" alt=""><span>Мягко очищает и полирует<br> поверхность зубов</span></div>
+                    <div class="carousel--info-box second"><img src="img/stone.png" alt=""><span>Препятствует образованию<br>зубного камня</span></div>
+                  </div>
+                  <div class="col-25 d-flex justify-center col h-100">
+                    <div class="carousel--info-box third"><img src="img/blue-diamant.png" alt=""><span>Содержит<br> мельчайшие частицы<br> настоящего диаманта</span></div>
+                  </div>
+                </div>
+                <div class="about--brand"><span class="about--brand__title">emoform</span><span class="about--brand__subtitle">Зубная паста здорового человека!</span><a class="link--btn" href="/emoform.html">Подробнее</a></div>
+              </div>
+              <div class="main--carousel--info brand-3 w-100 h-100" id="main--emofluor">
+                <div class="brand--container d-flex space-between h-60 w-100">
+                  <div class="col-25 d-flex space-between col h-100">
+                    <div class="carousel--info-box first"><img src="img/emof1.png" alt=""><span>снижает повышенную<br> чувствительность зубов, <br>запечатывая дентинные канальцы</span></div>
+                    <div class="carousel--info-box second"><img src="img/swisstechnology.png" alt=""><span>Удостоенно награды Swiss<br> Technology® Award</span></div>
+                  </div>
+                  <div class="col-25 d-flex justify-center col h-100">
+                    <div class="carousel--info-box third"><img src="img/unique.png" alt=""><span>Содержит уникальную комбинацию<br> высокоэффективного минерала<br> фторида олова и технологию<br> CUROLOX®</span></div>
+                  </div>
+                </div>
+                <div class="about--brand"><span class="about--brand__title">emofluor</span><span class="about--brand__subtitle">Зубная паста здорового человека!</span><a class="link--btn" href="/emofluor.html">Подробнее</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="box main--slider__mobile">
+            <div class="mobile--slider__item"><span class="mobile--slider__title">Tebodont</span>
+              <p class="mobile--slider__text">Швейцарская продукция с маслом чайного дерева для оптимального ухода за зубами и ротовой полостью</p>
+              <p class="mobile--slider__slogan"><span>Tebodont </span> - зубная паста здорового человека!</p><img class="mobile--slider__img" src="img/tebodont-banner-img.png" alt="">
+              <p class="mobile--slider__info">Продукция <b>TEBODONT®</b><br>представлена эксклюзивно в аптеках и стоматологических клиниках</p>
+            </div>
+            <div class="mobile--slider__item"><span class="mobile--slider__title">Emofluor</span>
+              <p class="mobile--slider__text">Профессиональная зубная паста с двойной защитой от эрозии зубов и для уменьшения повышенной чувствительности</p>
+              <p class="mobile--slider__slogan"><span>Emofluor </span> - высокие технологии для здоровья ваших зубов!</p><img class="mobile--slider__img" src="img/emofluor--mobile--slider.png" alt="">
+              <p class="mobile--slider__info">Продукция <b>emofluor®</b><br>представлена эксклюзивно в аптеках и стоматологических клиниках</p>
+            </div>
+            <div class="mobile--slider__item"><span class="mobile--slider__title">Emoform</span>
+              <p class="mobile--slider__text">Швейцарская зубная паста с алмазной пудрой для безопасного профессионального отбеливания</p>
+              <p class="mobile--slider__slogan"><span>Emoform </span>  - ваша улыбка сияет!</p><img class="mobile--slider__img" src="img/emoform--mobile--slider.png" alt="">
+              <p class="mobile--slider__info">Продукция <b>Emoform®</b><br>представлена эксклюзивно в аптеках и стоматологических клиниках</p>
+            </div>
+          </div>
+          <div class="box"><a class="link--btn main--mobile--link" href="/catalog">Каталог</a></div>
+          <div class="box set d-flex col w-100">
+            <div class="set--title"><span>комплексный швейцарский набор</span></div>
+            <div class="set--content col d-flex ai-center col">
+              <div class="set--content__title">Решает основные проблемы ротовой полости</div>
+              <div class="set--content__elems d-flex ai-center space-between w-100">
+                <div class="set--content__elem d-flex col ai-center jusitify-center"><img class="set--content__elem-img" src="img/set--tooth1.png" alt=""><span class="set--content__elem-name">Устраняет проблемы с деснами</span></div>
+                <div class="set--content__elem d-flex col ai-center jusitify-center"><img class="set--content__elem-img" src="img/set--tooth2.png" alt=""><span class="set--content__elem-name">Бережно отбеливает эмаль</span></div>
+                <div class="set--content__elem d-flex col ai-center jusitify-center"><img class="set--content__elem-img" src="img/set--tooth3.png" alt=""><span class="set--content__elem-name">Профилактика кариеса</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="box gifts d-flex">
+            <div class="gifts--paral"><img src="img/gift--list.png" alt=""></div><img class="left--gift" src="img/gift-left.png" alt=""><img class="gift--box" src="img/box.png" alt="">
+          </div>
+          <div class="box lifehucks d-flex col w-100">
+            <div class="lifehucks--title"><span>лайфхаки</span></div>
+            <ul class="lifehucks--list">
+              <li class="lifehucks--list__item"><span>как правильно чистить зубы?</span>
+                <div class="lifehucks--list__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quaerat ipsa, asperiores vitae autem, consequatur obcaecati eveniet, modi officia cumque magni dolore odit laborum molestias? Rem necessitatibus temporibus laboriosam vitae!</div>
+              </li>
+              <li class="lifehucks--list__item"><span>чем полоскать и зачем?</span>
+                <div class="lifehucks--list__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>зубная нить или зубочистка?</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>жевательная резинка: правда или фейк?</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>топ5 мифов</span>
+                <div class="lifehucks--list__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>кровоточивость дёсен: что делать?</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+              <li class="lifehucks--list__item"><span>повышенная чувствительность: терпеть нельзя лечить</span>
+                <div class="lifehucks--list__content"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quos voluptatem enim temporibus cumque vel assumenda fugit tempore molestias omnis cupiditate laudantium, accusamus eveniet repellendus aperiam facere. Vero, temporibus commodi?</div>
+              </li>
+            </ul>
+          </div>
+          <div class="box reviews d-flex col w-100">
+            <div class="reviews--title"><span>отзывы покупателей</span></div>
+            <div class="reviews--carousel">
+              <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo1.png" alt=""><span class="review--name">евгений</span><span class="review--date">18 января 2020</span>
+                <div class="rating">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                </div>
+                <div class="review--text">
+                  <p>Начали пользоваться по совету врача. Чистит хорошо, приятно пахнет. К послевкусию привыкли быстро. Только брали без фтора.</p>
+                </div>
+              </div>
+              <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo 2.png" alt=""><span class="review--name">АЛЕКСЕЙ</span><span class="review--date">23 марта 2019</span>
+                <div class="rating">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                </div>
+                <div class="review--text">
+                  <p>Отличная зубная паста. Пользуюсь в основном ей и этой же компании - пастой Emoform-F Protect и ополаскивателем Tebodont. С зубами и деснами на протяжении этого времени все отлично.</p>
+                </div>
+              </div>
+              <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo1.png" alt=""><span class="review--name">ВЕРОНИКА</span><span class="review--date">11 ноября 2019</span>
+                <div class="rating">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                </div>
+                <div class="review--text">
+                  <p>Дорогая но очень качественная паста. Купила по совету стоматолога и не пожалела. Очень хорошо очищает и оставляет приятную свежесть. Брала из за пародонтоза. Сейчас кровоточивость не наблюдаю.</p>
+                </div>
+              </div>
+              <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo1.png" alt=""><span class="review--name">евгений</span><span class="review--date">18 января 2020</span>
+                <div class="rating">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                </div>
+                <div class="review--text">
+                  <p>Начали пользоваться по совету врача. Чистит хорошо, приятно пахнет. К послевкусию привыкли быстро. Только брали без фтора.</p>
+                </div>
+              </div>
+              <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo 2.png" alt=""><span class="review--name">АЛЕКСЕЙ</span><span class="review--date">23 марта 2019</span>
+                <div class="rating">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                </div>
+                <div class="review--text">
+                  <p>Отличная зубная паста. Пользуюсь в основном ей и этой же компании - пастой Emoform-F Protect и ополаскивателем Tebodont. С зубами и деснами на протяжении этого времени все отлично.</p>
+                </div>
+              </div>
+              <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo 3.png" alt=""><span class="review--name">ВЕРОНИКА</span><span class="review--date">11 ноября 2019</span>
+                <div class="rating">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+                  </svg>
+                </div>
+                <div class="review--text">
+                  <p>Дорогая но очень качественная паста. Купила по совету стоматолога и не пожалела. Очень хорошо очищает и оставляет приятную свежесть. Брала из за пародонтоза. Сейчас кровоточивость не наблюдаю.</p>
+                </div>
+              </div>
+            </div>
+            <button class="slide-prev" type="button"><img src="img/btn-prev.png" alt=""></button>
+            <button class="slide-next" type="button"><img src="img/btn-next.png" alt=""></button>
+            <button class="add-review" type="button" data-fancybox data-src="#add-comment">Добавить отзыв</button>
+          </div>
+          <div class="box partners d-flex col w-100">
+            <div class="reviews--title"><span>наши партнеры</span></div>
+            <div class="partners--carousel">
+              <div class="partner d-flex col ai-center justify-center"><img class="partner--img" src="img/partner1.png" alt=""><span class="partner--name">европейская ассоциация стоматологов</span></div>
+              <div class="partner d-flex col ai-center justify-center"><img class="partner--img" src="img/partner2.png" alt=""><span class="partner--name">европейская ассоциация стоматологов</span></div>
+              <div class="partner d-flex col ai-center justify-center"><img class="partner--img" src="img/partner3.png" alt=""><span class="partner--name">европейская ассоциация стоматологов</span></div>
+              <div class="partner d-flex col ai-center justify-center"><img class="partner--img" src="img/partner4.png" alt=""><span class="partner--name">европейская ассоциация стоматологов</span></div>
+              <div class="partner d-flex col ai-center justify-center"><img class="partner--img" src="img/partner2.png" alt=""><span class="partner--name">европейская ассоциация стоматологов</span></div>
+              <div class="partner d-flex col ai-center justify-center"><img class="partner--img" src="img/partner4.png" alt=""><span class="partner--name">европейская ассоциация стоматологов</span></div>
+              <div class="partner d-flex col ai-center justify-center"><img class="partner--img" src="img/partner3.png" alt=""><span class="partner--name">европейская ассоциация стоматологов</span></div>
+            </div>
+          </div>
+          <div class="box">
+            <div class="footer--form d-flex w-100 ai-center justify-center"><span class="footer--form__text">УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!</span>
+              <form class="d-flex ai-center" action="">
+                <input class="footer--form__input" name="email" type="text" placeholder="E-mail">
+                <button class="footer--form__btn" type="submit">подписаться</button>
+              </form>
+            </div>
+          </div>
+        </main>
+      </div>
+      <div class="footer-wrapper" id="footerWrapper">
+        <footer class="footer">
+          <div class="box">
+            <div class="footer__body d-flex w-100">
+              <div class="footer__contacts d-flex ai-start"><img src="img/phone.svg" alt="Phone">
+                <div class="footer__contacts--info d-flex col"><span class="footer--text">Звонки бесплатны на территории Украины</span><span class="footer--text">0 800 500 362 многоканальный</span><span class="footer--text">+380 44 500 68 00 многоканальный тел./факс</span><span class="footer--text">+380 50 380 49 42 (МТС)</span><span class="footer--text">+380 68 492 68 00 (Киевстар)</span></div>
+              </div>
+              <div class="footer__central d-flex col ai-center justify-center p-RL20"><a class="footer--logo" href="/"><img src="img/logo.svg" alt="Logo"></a><span class="footer--name">ООО СВИСС-ТРЕЙД</span>
+                <nav class="footer__menu d-flex ai-center">
+                  <ul class="footer__menu-list d-flex">
+                    <li class="menu--item"><a href="/">каталог</a></li>
+                    <li class="menu--item"><a href="/">о нас</a></li>
+                    <li class="menu--item"><a href="/">доставка</a></li>
+                    <li class="menu--item"><a href="/">контакты</a></li>
+                  </ul>
+                  <div class="footer--currency"><span class="footer--currency__active">USD</span>
+                    <ul class="footer--currency_list">
+                      <li class="footer--currency_item"><a href="/">USD</a></li>
+                      <li class="footer--currency_item"><a href="/">EUR</a></li>
+                      <li class="footer--currency_item"><a href="/">UAH</a></li>
+                    </ul>
+                  </div>
+                  <div class="footer--lang"><span class="footer--lang__active">RU</span>
+                    <ul class="footer--lang_list">
+                      <li class="footer--lang_item"><a href="/">RU</a></li>
+                      <li class="footer--lang_item"><a href="/">UA</a></li>
+                      <li class="footer--lang_item"><a href="/">EN</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <p class="footer--copyright">Copyright © 2020 Дизайн:<a href="https://www.behance.net/FoxDesign7">FoxDesign</a></p>
+              </div>
+              <div class="footer__right d-flex col">
+                <div class="footer__right--mail d-flex ai-center"><img src="img/mail.svg" alt="Mail"><span class="footer--text">info@swisstrade.com.ua</span></div>
+                <div class="footer__right--location d-flex ai-center"><img src="img/location.svg" alt="location"><span class="footer--text">Бутышев переулок 14, офис 2, Киев, Украина, 01010</span></div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div style="display: none;" id="add-comment">
+      <form class="add--commtent__modal d-flex col"><span class="add--comment__title">Оцените качество товара:</span>
+        <div class="rating">
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+          </svg>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+          </svg>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+          </svg>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+          </svg>
+          <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
+          </svg>
+        </div>
+        <div class="add--comment__fields d-flex flex-wrap">
+          <input class="add--comment__input" type="text" placeholder="Ваше имя" name="name">
+          <input class="download--img__input" type="file" name="user-photo" id="user-photo">
+          <label class="download--img" for="user-photo">
+            <div class="download--img__image d-flex ai-center justify-center">
+              <p>Загрузить<br> аватар<br><br><span>До 5мб</span></p><img src="" alt="">
+            </div>
+          </label>
+          <textarea class="add--comment__text" name="comment--text" placeholder="Ваш комментарий"></textarea>
+          <button class="link--btn" type="submit">Опубликовать</button>
+        </div>
+      </form>
+    </div>
+    <div style="display: none;" id="add-toCart">
+      <form class="add--toCart__modal d-flex col">
+        <div class="add--toCart__body d-flex w-100 col">
+          <div class="product--item d-flex w-100 ai-center">
+            <div class="product--item__img d-flex ai-center justify-center"><img src="" alt=""></div>
+            <div class="product--item__name d-flex col ai-start justify-start"><span class="selected--prod__name"></span><span class="selected--prod__text"></span></div>
+            <div class="product--item__counter d-flex ai-center justify-center">
+              <button class="item--btn minus" type="button"><img src="img/minus.png" alt="Minus"></button>
+              <input class="item--input" type="text" value="1">
+              <button class="item--btn plus" type="button"><img src="img/plus.png" alt="Plus"></button>
+            </div>
+            <div class="product--item__price d-flex ai-center justify-center"><span class="price--value"></span><span class="price--currency"></span></div>
+            <button class="item--remove"><img src="img/remove.png" alt=""></button>
+          </div>
+        </div>
+        <div class="add--toCart__footer d-flex ai-start space-between">
+          <div class="productsInCart">
+            <p>Товаров в корзине:<span class="cart--footer__count">0</span></p>
+          </div>
+          <div class="productsInCart__info d-flex col">
+            <div class="productsInCart__sale d-flex ai-center"><span class="cart--footer__text">Скидка: </span><span class="cart--footer__summ">4</span><span class="cart--footer__currency">$</span></div>
+            <div class="productsInCart__pay d-flex ai-center"><span class="cart--footer__text">К оплате: </span><span class="cart--footer__summ"> </span><span class="cart--footer__currency">$</span></div>
+          </div>
+        </div>
+        <div class="add--toCart__btns">
+          <div class="d-flex ai-center space-between"><a class="link--btn" href="catalog.html">вернуться к покупкам</a><a class="link--btn active" href="cart-final.html">оформить</a></div>
+        </div>
+      </form>
+    </div>
+    <div style="display: none;" id="send--form">
+      <div class="send--form d-flex col ai-center"><span class="send--form__title">спасибо!</span><span class="send--form__text">Ваш заказ успешно оформлен, при необходимости наш менеджер свяжется с вами для уточнения деталей.</span></div>
+    </div>
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script src="js/paralax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://bkosborne.com/sites/all/themes/bootstrap_brian/js/jquery.waterwheelCarousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="js/main-carousel.js.js"></script>
+    <script src="js/revalator.js"></script>
+    <script src="js/hamburger.js"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

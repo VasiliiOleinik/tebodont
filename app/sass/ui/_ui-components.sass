@@ -203,7 +203,7 @@ select, input, textarea
   letter-spacing: 0.03em
   text-transform: uppercase
   color: #000000
-  padding: 10px 25px
+  padding: 12px 60px
   border: 1px solid #242424
   box-sizing: border-box
   text-align: center
@@ -397,3 +397,15 @@ select, input, textarea
         letter-spacing: 0.03em
         color: #000000
         margin-right: 15px
+.reviews .review .rating svg.active path
+  fill: #F8BD64
+.hamburger--spring.is-active .hamburger-inner:after,
+.hamburger--spring.is-active .hamburger-inner:before
+  background: #ffffff
+.hamburger
+  transition: all .2s linear
+  position: relative
+  &.is-active
+    left: 200px
+    transition: all .2s linear
+    z-index: 99999

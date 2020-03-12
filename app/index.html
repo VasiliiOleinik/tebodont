@@ -11,22 +11,36 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700&amp;display=swap" rel="stylesheet">
+    <link type="text/css" href="css/revalator.css" rel="stylesheet">
     <link type="text/css" href="css/main.css" rel="stylesheet">
     <title>Tebodont</title>
   </head>
   <body>
     <div class="content-wrapper" id="contentWrapper">
       <div class="page-wrapper" id="pageWrapper">
+        <div class="mobile--navigation">
+          <ul class="mobile--navigation__list d-flex col">
+            <li class="mobile--navigation__elem"><a href="/catalog.html">каталог</a></li>
+            <li class="mobile--navigation__elem"><a href="/tebodont.html">Tebodont</a></li>
+            <li class="mobile--navigation__elem"><a href="/emoform.html">Emoform</a></li>
+            <li class="mobile--navigation__elem"><a href="/emofluor.html">Emofluor</a></li>
+            <li class="mobile--navigation__elem"><a href="/delivery.html">доставка</a></li>
+            <li class="mobile--navigation__elem"><a href="/contacts.html">контакты</a></li>
+          </ul>
+        </div>
         <header class="header">
           <div class="box h-100 ai-center">
             <div class="header__body d-flex ai-center w-100">
+              <button class="hamburger hamburger--spring" type="button"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
               <div class="header__logo"><a href=""><img src="img/logo.svg" alt="Logo"></a></div>
               <nav class="header__menu">
                 <ul class="header__menu-list d-flex">
-                  <li class="menu--item"><a href="/">каталог</a></li>
-                  <li class="menu--item"><a href="/">о нас</a></li>
-                  <li class="menu--item"><a href="/">доставка</a></li>
-                  <li class="menu--item"><a href="/">контакты</a></li>
+                  <li class="menu--item"><a href="/catalog.html">каталог</a></li>
+                  <li class="menu--item"><a href="/tebodont.html">Tebodont</a></li>
+                  <li class="menu--item"><a href="/emoform.html">Emoform</a></li>
+                  <li class="menu--item"><a href="/emofluor.html">Emofluor</a></li>
+                  <li class="menu--item"><a href="/delivery.html">доставка</a></li>
+                  <li class="menu--item"><a href="/contacts.html">контакты</a></li>
                 </ul>
               </nav>
               <div class="header__management d-flex ai-center">
@@ -43,18 +57,16 @@
                     <li class="header--lang_item"><a href="/">UA</a></li>
                     <li class="header--lang_item"><a href="/">EN</a></li>
                   </ul>
-                </div><a class="header--cart" href="cart.html"><img src="img/cart.svg" alt="Cart ico"><span class="header--cart_counter d-flex ai-center justify-center">3</span></a>
+                </div><a class="header--cart" href="cart.html"><img src="img/cart.svg" alt="Cart ico"><span class="header--cart_counter d-flex ai-center justify-center"></span></a>
               </div>
             </div>
           </div>
         </header>
         <main class="main">
           <div class="box main--img d-flex ai-center justify-center"><img src="img/main--img.png" alt=""></div>
-          <div class="brand-paralax brand-1"><img class="js-parallax" src="img/leaf--par.png" alt="" data-size="10"></div>
-          <div class="brand-paralax brand-2"><img class="js-parallax" src="img/diamants-par.png" alt="" data-size="10"></div>
-          <div class="brand-paralax brand-3">
-            <canvas id="background"></canvas>
-          </div>
+          <div class="brand-paralax brand-1"><img src="img/leaf--par.png" alt=""></div>
+          <div class="brand-paralax brand-2"><img src="img/diamants-par.png" alt=""></div>
+          <div class="brand-paralax brand-3"></div>
           <div class="box">
             <div id="waterwheel-carousel"><img src="img/tebobont-info-past.png" alt=""><img src="img/emoform-info-past.png" alt=""><img src="img/emofluor-info-past.png" alt=""></div><a href="#" id="waterwheel-next">Next</a>
             <div class="main--carousel__brands"><img class="rotate--img" src="img/rotate.png" alt="">
@@ -126,7 +138,7 @@
             </div>
           </div>
           <div class="box gifts d-flex">
-            <div class="gifts--paral"><img class="js-parallax" src="img/gift--list.png" alt="" data-size="10"></div><img class="left--gift" src="img/gift-left.png" alt=""><img class="gift--box" src="img/box.png" alt="">
+            <div class="gifts--paral"><img src="img/gift--list.png" alt=""></div><img class="left--gift" src="img/gift-left.png" alt=""><img class="gift--box" src="img/box.png" alt="">
           </div>
           <div class="box lifehucks d-flex col w-100">
             <div class="lifehucks--title"><span>лайфхаки</span></div>
@@ -159,16 +171,16 @@
             <div class="reviews--carousel">
               <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo1.png" alt=""><span class="review--name">евгений</span><span class="review--date">18 января 2020</span>
                 <div class="rating">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
                   <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -181,19 +193,19 @@
               </div>
               <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo 2.png" alt=""><span class="review--name">АЛЕКСЕЙ</span><span class="review--date">23 марта 2019</span>
                 <div class="rating">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
                 </div>
@@ -203,19 +215,19 @@
               </div>
               <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo1.png" alt=""><span class="review--name">ВЕРОНИКА</span><span class="review--date">11 ноября 2019</span>
                 <div class="rating">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
                 </div>
@@ -225,13 +237,13 @@
               </div>
               <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo1.png" alt=""><span class="review--name">евгений</span><span class="review--date">18 января 2020</span>
                 <div class="rating">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
                   <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -247,19 +259,19 @@
               </div>
               <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo 2.png" alt=""><span class="review--name">АЛЕКСЕЙ</span><span class="review--date">23 марта 2019</span>
                 <div class="rating">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
                 </div>
@@ -269,19 +281,19 @@
               </div>
               <div class="review d-flex col ai-center justify-center"><img class="review--img" src="img/photo 3.png" alt=""><span class="review--name">ВЕРОНИКА</span><span class="review--date">11 ноября 2019</span>
                 <div class="rating">
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
-                  <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="active" width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M8.5 0L10.4084 5.87336L16.584 5.87336L11.5878 9.50329L13.4962 15.3766L8.5 11.7467L3.50383 15.3766L5.41219 9.50329L0.416019 5.87336L6.59163 5.87336L8.5 0Z" fill="#C4C4C4"></path>
                   </svg>
                 </div>
@@ -418,6 +430,9 @@
         </div>
       </form>
     </div>
+    <div style="display: none;" id="send--form">
+      <div class="send--form d-flex col ai-center"><span class="send--form__title">спасибо!</span><span class="send--form__text">Ваш заказ успешно оформлен, при необходимости наш менеджер свяжется с вами для уточнения деталей.</span></div>
+    </div>
     <script src="js/libs.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
@@ -425,6 +440,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
     <script src="https://bkosborne.com/sites/all/themes/bootstrap_brian/js/jquery.waterwheelCarousel.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+    <script src="js/revalator.js"></script>
+    <script src="js/hamburger.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

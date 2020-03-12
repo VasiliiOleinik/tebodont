@@ -11,11 +11,26 @@ html(lang="ru")
     link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet")
     link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" rel="stylesheet")
     link(href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:400,500,700&display=swap" rel="stylesheet")
+    link(type="text/css", href="css/revalator.css", rel="stylesheet")
     link(type="text/css", href="css/main.css", rel="stylesheet")
     title Tebodont
   body
     #contentWrapper.content-wrapper
       #pageWrapper.page-wrapper
+        .mobile--navigation
+          ul(class="mobile--navigation__list d-flex col")
+            li(class="mobile--navigation__elem")
+              a(href="/catalog.html") каталог
+            li(class="mobile--navigation__elem")
+              a(href="/tebodont.html") Tebodont
+            li(class="mobile--navigation__elem")
+              a(href="/emoform.html") Emoform
+            li(class="mobile--navigation__elem")
+              a(href="/emofluor.html") Emofluor
+            li(class="mobile--navigation__elem")
+              a(href="/delivery.html") доставка
+            li(class="mobile--navigation__elem")
+              a(href="/contacts.html") контакты
         include _header
         block content
 
@@ -82,6 +97,10 @@ html(lang="ru")
           .d-flex.ai-center.space-between
             a(href="catalog.html" class="link--btn") вернуться к покупкам
             a(href="cart-final.html" class="link--btn active") оформить
+    div(style="display: none;" id="send--form")
+      .send--form.d-flex.col.ai-center
+        span(class="send--form__title") спасибо!
+        span(class="send--form__text") Ваш заказ успешно оформлен, при необходимости наш менеджер свяжется с вами для уточнения деталей.
     script(src="js/libs.min.js")
     script(src="js/jquery-ui.min.js")
     script(src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js")
@@ -89,4 +108,6 @@ html(lang="ru")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js")
     script(src="https://bkosborne.com/sites/all/themes/bootstrap_brian/js/jquery.waterwheelCarousel.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js")
+    script(src="js/revalator.js")
+    script(src="js/hamburger.js")
     script(src="js/common.js")

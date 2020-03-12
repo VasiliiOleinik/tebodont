@@ -3,7 +3,7 @@
   margin-bottom: 70px
   &--img
     position: absolute
-    left: 10%
+    left: 5%
     top: -20%
     & img
       position: relative
@@ -19,11 +19,13 @@
       text-transform: uppercase
       color: #4D4D4D
       margin-bottom: 30px
+      margin-top: 50px
     &__description
       font-family: $lato
       font-style: normal
       font-weight: 300
       font-size: 18px
+      line-height: 168%
       letter-spacing: 0.03em
       color: #000000
       margin-bottom: 60px
@@ -115,7 +117,7 @@
           content: url('../img/second.png')
           position: absolute
           bottom: 30px
-          left: 25%
+          left: 30%
       &.third.country
         & img
           flex-shrink: 0
@@ -199,7 +201,7 @@
     box-shadow: 3px 7px 27px rgba(0, 0, 0, 0.25)
     margin-bottom: 200px
     margin-top: 120px
-    & .col-50
+    & .col-40
       position: relative
     & .brand--footer__img
       position: absolute
@@ -217,6 +219,7 @@
       text-transform: uppercase
       margin-bottom: 15px
       display: inline-block
+      margin-top: 0px
     & .brand--banner__text
       font-family: $lato
       font-style: normal
@@ -342,3 +345,5 @@
 .brand--footer-par
   top: 25%
   z-index: 1
+.brand.emoform .brand--prod-img img
+  object-fit: none

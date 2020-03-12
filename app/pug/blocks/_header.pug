@@ -1,19 +1,26 @@
 header.header
   .box.h-100.ai-center
     .header__body.d-flex.ai-center.w-100
+      button(class="hamburger hamburger--spring" type="button")
+        span.hamburger-box
+          span.hamburger-inner
       .header__logo
         a(href="")
           img(src="img/logo.svg", alt="Logo")
       nav(class="header__menu")
         ul(class="header__menu-list d-flex")
           li(class="menu--item")
-            a(href="/") каталог
+            a(href="/catalog.html") каталог
           li(class="menu--item")
-            a(href="/") о нас
+            a(href="/tebodont.html") Tebodont
           li(class="menu--item")
-            a(href="/") доставка
+            a(href="/emoform.html") Emoform
           li(class="menu--item")
-            a(href="/") контакты
+            a(href="/emofluor.html") Emofluor
+          li(class="menu--item")
+            a(href="/delivery.html") доставка
+          li(class="menu--item")
+            a(href="/contacts.html") контакты
       .header__management.d-flex.ai-center
         .header--currency
           span(class="header--currency__active") USD
@@ -35,4 +42,4 @@ header.header
               a(href="/") EN
         a(href="cart.html" class="header--cart")
           img(src="img/cart.svg", alt="Cart ico")
-          span(class="header--cart_counter d-flex ai-center justify-center") 3
+          span(class="header--cart_counter d-flex ai-center justify-center")

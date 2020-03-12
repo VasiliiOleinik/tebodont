@@ -297,7 +297,7 @@ select, input, textarea {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #000000;
-  padding: 10px 25px;
+  padding: 12px 60px;
   border: 1px solid #242424;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -508,6 +508,25 @@ select, input, textarea {
         color: #000000;
         margin-right: 15px; }
 
+.reviews .review .rating svg.active path {
+  fill: #F8BD64; }
+
+.hamburger--spring.is-active .hamburger-inner:after,
+.hamburger--spring.is-active .hamburger-inner:before {
+  background: #ffffff; }
+
+.hamburger {
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+  position: relative; }
+  .hamburger.is-active {
+    left: 200px;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear;
+    z-index: 99999; }
+
 .footer--form {
   margin-bottom: 100px; }
   .footer--form__text {
@@ -580,8 +599,6 @@ select, input, textarea {
       font-weight: 300;
       font-size: 16px;
       line-height: 134.6%;
-      text-transform: capitalize;
-      text-transform: capitalize;
       color: #000000; }
   .footer__central {
     width: 45%; }
@@ -853,7 +870,16 @@ select, input, textarea {
         line-height: 134.6%;
         text-align: center;
         text-transform: lowercase;
-        color: #5B5B5B; }
+        color: #5B5B5B;
+        opacity: 0;
+        -webkit-transition: all .2s linear;
+        -o-transition: all .2s linear;
+        transition: all .2s linear; }
+        .header__management .header--cart_counter.active {
+          opacity: 1;
+          -webkit-transition: all .2s linear;
+          -o-transition: all .2s linear;
+          transition: all .2s linear; }
 
 .partners {
   margin-bottom: 70px; }
@@ -1209,6 +1235,9 @@ select, input, textarea {
     width: 100%;
     height: 100%; }
 
+.lifehucks--list__item .lifehucks--list__content {
+  text-transform: initial; }
+
 .partners {
   margin-bottom: 70px; }
   .partners .partner {
@@ -1562,6 +1591,9 @@ select, input, textarea {
     max-height: 550px;
     width: 100%;
     height: 100%; }
+
+.lifehucks--list__item .lifehucks--list__content {
+  text-transform: initial; }
 
 .cart--content .cart--header {
   width: 100%;
@@ -1795,6 +1827,43 @@ select, input, textarea {
 .cart--checkout .cart--footer__btns {
   margin-bottom: 70px; }
 
+.send--form {
+  max-width: 550px;
+  width: 100%;
+  height: auto;
+  text-align: center; }
+  .send--form__title {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 168.2%;
+    letter-spacing: 0.03em;
+    text-transform: capitalize;
+    color: #000000;
+    margin-bottom: 50px;
+    position: relative; }
+    .send--form__title:after {
+      content: '';
+      position: absolute;
+      right: -31px;
+      bottom: -38px;
+      width: 72px;
+      height: 73px;
+      background-image: url(../img/form-leaf.png);
+      display: block;
+      -webkit-background-size: 100% 100%;
+              background-size: 100% 100%; }
+  .send--form__text {
+    font-family: "Lato", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 134.6%;
+    text-align: center;
+    color: #9C9C9C;
+    margin-bottom: 30px; }
+
 .contacts--section {
   margin-bottom: 50px; }
   .contacts--section .contacts--item {
@@ -2027,7 +2096,7 @@ select, input, textarea {
     -webkit-box-shadow: 3px 7px 27px rgba(0, 0, 0, 0.25);
             box-shadow: 3px 7px 27px rgba(0, 0, 0, 0.25); }
     .catalog--banner__content .banner--text {
-      max-width: 70%;
+      max-width: 75%;
       width: 100%;
       height: 100%;
       padding-left: 200px; }
@@ -2039,7 +2108,7 @@ select, input, textarea {
         line-height: 123.6%;
         text-transform: uppercase;
         color: #5B5B5B;
-        margin-bottom: 15px; }
+        margin-bottom: 10px; }
       .catalog--banner__content .banner--text .banner--description {
         font-family: "Lato", sans-serif;
         font-style: normal;
@@ -2047,6 +2116,9 @@ select, input, textarea {
         font-size: 18px;
         line-height: 123.6%;
         color: #000000; }
+      .catalog--banner__content .banner--text .link--btn {
+        margin-right: auto;
+        margin-top: 40px; }
     .catalog--banner__content .banner--paralax {
       position: absolute;
       right: 50px;
@@ -2219,7 +2291,7 @@ select, input, textarea {
   margin-bottom: 70px; }
   .brand--img {
     position: absolute;
-    left: 10%;
+    left: 5%;
     top: -20%; }
     .brand--img img {
       position: relative; }
@@ -2234,12 +2306,14 @@ select, input, textarea {
       letter-spacing: 0.03em;
       text-transform: uppercase;
       color: #4D4D4D;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      margin-top: 50px; }
     .brand--banner__description {
       font-family: "Lato", sans-serif;
       font-style: normal;
       font-weight: 300;
       font-size: 18px;
+      line-height: 168%;
       letter-spacing: 0.03em;
       color: #000000;
       margin-bottom: 60px; }
@@ -2334,7 +2408,7 @@ select, input, textarea {
       content: url("../img/second.png");
       position: absolute;
       bottom: 30px;
-      left: 25%; }
+      left: 30%; }
   .brand--info__infogra .infogra--box.third.country img {
     -webkit-flex-shrink: 0;
         -ms-flex-negative: 0;
@@ -2421,7 +2495,7 @@ select, input, textarea {
             box-shadow: 3px 7px 27px rgba(0, 0, 0, 0.25);
     margin-bottom: 200px;
     margin-top: 120px; }
-    .brand--footer__banner .col-50 {
+    .brand--footer__banner .col-40 {
       position: relative; }
     .brand--footer__banner .brand--footer__img {
       position: absolute;
@@ -2440,7 +2514,8 @@ select, input, textarea {
       color: #383838;
       text-transform: uppercase;
       margin-bottom: 15px;
-      display: inline-block; }
+      display: inline-block;
+      margin-top: 0px; }
     .brand--footer__banner .brand--banner__text {
       font-family: "Lato", sans-serif;
       font-style: normal;
@@ -2595,6 +2670,10 @@ select, input, textarea {
   top: 25%;
   z-index: 1; }
 
+.brand.emoform .brand--prod-img img {
+  -o-object-fit: none;
+     object-fit: none; }
+
 .product {
   margin-bottom: 32px; }
   .product--box {
@@ -2722,6 +2801,10 @@ select, input, textarea {
 
 .catalog--section__title.product:before {
   width: 36%; }
+
+.mobile--navigation,
+.hamburger {
+  display: none; }
 
 @media (max-width: 1600px) {
   .brand--info__infogra .infogra--box.second.procent {
@@ -2939,7 +3022,39 @@ select, input, textarea {
     bottom: 50%;
     -webkit-transform: translateY(25%);
         -ms-transform: translateY(25%);
-            transform: translateY(25%); } }
+            transform: translateY(25%); }
+  .header__body {
+    position: relative; }
+  .header__logo {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-webkit-calc(-50% - 10px));
+        -ms-transform: translateX(calc(-50% - 10px));
+            transform: translateX(calc(-50% - 10px)); }
+  .header__menu,
+  .header__management .header--currency,
+  .header__management .header--lang {
+    display: none; }
+  .mobile--navigation {
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    background: #000000;
+    color: #fff;
+    padding: 50px 40px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 9999;
+    overflow: auto; }
+    .mobile--navigation .mobile--navigation__elem {
+      margin-bottom: 20px; }
+  .hamburger {
+    display: block; } }
 
 @media (max-width: 800px) {
   .cart--content .cart--header {
@@ -2974,9 +3089,6 @@ select, input, textarea {
   .footer__right,
   .footer__contacts,
   .footer__central .footer--logo,
-  .header__menu,
-  .header__management .header--currency,
-  .header__management .header--lang,
   .catalog--section__title:before,
   .catalog--section__title:after,
   .reviews--title:after,
@@ -2987,14 +3099,6 @@ select, input, textarea {
     padding: 0px; }
   .footer {
     padding: 14px 0px; }
-  .header__body {
-    position: relative; }
-  .header__logo {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-webkit-calc(-50% - 10px));
-        -ms-transform: translateX(calc(-50% - 10px));
-            transform: translateX(calc(-50% - 10px)); }
   .footer--form form .footer--form__btn {
     max-width: 150px;
     font-size: 11px; }

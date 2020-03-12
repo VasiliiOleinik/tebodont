@@ -28,7 +28,7 @@ append content
                 span(class="checbox--custom")
                 p(class="checkbox--text d-flex col") Новая почта
                   span Доставка оплачивается дополнительно по тарифам почты
-              input(type="text" name="deliveryAdress" placeholder="Адрес потчового отделения" class="additionalInput")
+              input(type="text" name="deliveryAdress" placeholder="Адрес почтового отделения" class="additionalInput")
             .right--form-field
               label.cart--item__checbox.custom-checkbox--container.d-flex
                 input(type="radio" name="deliveryCheck" class="input--checkbox" value="courier")
@@ -49,7 +49,7 @@ append content
                   span при покупке на 1000грн доставка Новой почтой за наш счет!
         .cart--footer__btns.d-flex.ai-center.space-between.w-100
           a(href="cart.html" class="link--btn") назад
-          a(href="cart-final.html" class="link--btn active") Готово
+          a(href="javascript:void(0);" class="link--btn active" data-fancybox data-src="#send--form") Готово
       .footer--form.d-flex.w-100.ai-center.justify-center
         span(class="footer--form__text") УЗНАВАЙТЕ ПЕРВЫМИ О РАСПРОДАЖАХ И НОВИНКАХ!
         form(class="d-flex ai-center" action="")
